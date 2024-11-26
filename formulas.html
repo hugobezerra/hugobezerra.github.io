@@ -2,20 +2,160 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fórmulas de Matemática</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css"
-   
+    <script>
+        // Função para pesquisar tópicos e fórmulas
+        function pesquisar() {
+            const input = document.getElementById("campoPesquisa").value.toLowerCase();
+            const elementos = document.getElementsByClassName("conteudo");
+            for (let elemento of elementos) {
+                if (elemento.innerText.toLowerCase().includes(input)) {
+                    elemento.style.display = "block";
+                } else {
+                    elemento.style.display = "none";
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #e6f2ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #4682b4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body bgcolor="#DCDCDC">
-
+<body>
+    <header>
         <h1>Fórmulas de Matemática</h1>
-        <h1><a href=/index.html>Página Inicial</a></h1>
+        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico..." onkeyup="pesquisar()">
+    </header>
     
-   
-          <h2><a href=/geometriaplana.html>Geometria Plana</a></h2>  
-       
+    <main>
+        <a href="/index.html">Voltar à Página Inicial</a>
+        <section class="conteudo">
+            <h2>Geometria Plana</h2>
+            <p><strong>Círculo:</strong> Área: \( A = \pi \cdot r^2 \), onde \( r \) é o raio.</p>
+            <p>Comprimento: \( C = 2 \cdot \pi \cdot r \)</p>
+        </section>
 
-        
+        <section class="conteudo">
+            <h2>Geometria Espacial</h2>
+            <p><strong>Cubo:</strong> Volume: \( V = a^3 \), onde \( a \) é o comprimento da aresta.</p>
+            <p>Área Total: \( A = 6 \cdot a^2 \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Geometria Analítica</h2>
+            <p>Distância entre dois pontos: \( d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)</p>
+            <p>Equação da reta: \( y = mx + b \), onde \( m \) é o coeficiente angular.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Progressões (PA e PG)</h2>
+            <p><strong>PA:</strong> \( a_n = a_1 + (n - 1) \cdot r \), onde \( r \) é a razão.</p>
+            <p><strong>PG:</strong> \( a_n = a_1 \cdot q^{(n-1)} \), onde \( q \) é a razão.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Juros Simples e Compostos</h2>
+            <p><strong>Simples:</strong> \( J = C \cdot i \cdot t \), onde \( C \) é o capital inicial.</p>
+            <p><strong>Compostos:</strong> \( M = C \cdot (1 + i)^t \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Logaritmos</h2>
+            <p>\( \log_b(x) = y \leftrightarrow b^y = x \), onde \( b \) é a base.</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Equação do Segundo Grau</h2>
+            <p>\( ax^2 + bx + c = 0 \)</p>
+            <p>Fórmula de Bhaskara: \( x = \frac{-b \pm \sqrt{\Delta}}{2a} \), onde \( \Delta = b^2 - 4ac \).</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Produtos Notáveis</h2>
+            <p>\((a + b)^2 = a^2 + 2ab + b^2\)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Matrizes e Determinantes</h2>
+            <p>Determinante de uma matriz \( 2 \times 2 \): \( \text{det} = ad - bc \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Trigonometria</h2>
+            <p>Seno: \( \sin(\theta) = \frac{\text{cateto oposto}}{\text{hipotenusa}} \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Probabilidade</h2>
+            <p>\( P(E) = \frac{\text{número de casos favoráveis}}{\text{número de casos possíveis}} \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Estatística</h2>
+            <p>Média: \( \bar{x} = \frac{\sum x_i}{n} \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Binômio de Newton</h2>
+            <p>\( (a + b)^n = \sum_{k=0}^n \binom{n}{k} a^{n-k} b^k \)</p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Números Complexos</h2>
+            <p>\( z = a + bi \), onde \( i = \sqrt{-1} \).</p>
+        </section>
+    </main>
+
     <footer>
         <p>Desenvolvido por Hugo de Araújo Bezerra</p>
     </footer>
