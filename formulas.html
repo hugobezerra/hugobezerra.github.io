@@ -7,7 +7,6 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>
-        // Função para pesquisar tópicos e fórmulas
         function pesquisar() {
             const input = document.getElementById("campoPesquisa").value.toLowerCase();
             const elementos = document.getElementsByClassName("conteudo");
@@ -81,45 +80,53 @@
     
     <main>
         <a href="/index.html">Voltar à Página Inicial</a>
+        
+        <!-- Geometria Plana -->
         <section class="conteudo">
             <h2>Geometria Plana</h2>
-            <p><strong>Círculo:</strong> Área: \( A = \pi \cdot r^2 \), onde \( r \) é o raio.</p>
-            <p>Comprimento: \( C = 2 \cdot \pi \cdot r \)</p>
+            <p><strong>Quadrado:</strong> Área: \( A = l^2 \), onde \( l \) é o comprimento do lado.</p>
+            <p>Perímetro: \( P = 4 \cdot l \)</p>
+            
+            <p><strong>Retângulo:</strong> Área: \( A = b \cdot h \), onde \( b \) é a base e \( h \) a altura.</p>
+            <p>Perímetro: \( P = 2 \cdot (b + h) \)</p>
+            
+            <p><strong>Triângulo:</strong> Área: \( A = \frac{b \cdot h}{2} \), onde \( b \) é a base e \( h \) a altura.</p>
+            <p><strong>Fórmula de Heron:</strong> \( A = \sqrt{s \cdot (s - a) \cdot (s - b) \cdot (s - c)} \), onde \( s = \frac{a + b + c}{2} \) é o semiperímetro.</p>
+            <p><strong>Triângulo Equilátero:</strong> Área: \( A = \frac{\sqrt{3}}{4} \cdot l^2 \), onde \( l \) é o lado.</p>
+
+            <p><strong>Losango:</strong> Área: \( A = \frac{D \cdot d}{2} \), onde \( D \) e \( d \) são as diagonais.</p>
+            <p>Perímetro: \( P = 4 \cdot l \), onde \( l \) é o lado.</p>
+            
+            <p><strong>Trapézio:</strong> Área: \( A = \frac{(B + b) \cdot h}{2} \), onde \( B \) e \( b \) são as bases maior e menor, e \( h \) a altura.</p>
+            
+            <p><strong>Polígonos:</strong> Soma dos ângulos internos: \( S = (n - 2) \cdot 180^\circ \), onde \( n \) é o número de lados.</p>
+            <p>Ângulo interno de um polígono regular: \( \theta = \frac{(n - 2) \cdot 180^\circ}{n} \)</p>
         </section>
 
+        <!-- Geometria Espacial -->
         <section class="conteudo">
             <h2>Geometria Espacial</h2>
-            <p><strong>Cubo:</strong> Volume: \( V = a^3 \), onde \( a \) é o comprimento da aresta.</p>
+            <p><strong>Cubo:</strong> Volume: \( V = a^3 \), onde \( a \) é a aresta.</p>
             <p>Área Total: \( A = 6 \cdot a^2 \)</p>
-        </section>
-
-        <section class="conteudo">
-            <h2>Geometria Analítica</h2>
-            <p>Distância entre dois pontos: \( d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)</p>
-            <p>Equação da reta: \( y = mx + b \), onde \( m \) é o coeficiente angular.</p>
-        </section>
-
-        <section class="conteudo">
-            <h2>Progressões (PA e PG)</h2>
-            <p><strong>PA:</strong> \( a_n = a_1 + (n - 1) \cdot r \), onde \( r \) é a razão.</p>
-            <p><strong>PG:</strong> \( a_n = a_1 \cdot q^{(n-1)} \), onde \( q \) é a razão.</p>
-        </section>
-
-        <section class="conteudo">
-            <h2>Juros Simples e Compostos</h2>
-            <p><strong>Simples:</strong> \( J = C \cdot i \cdot t \), onde \( C \) é o capital inicial.</p>
-            <p><strong>Compostos:</strong> \( M = C \cdot (1 + i)^t \)</p>
-        </section>
-
-        <section class="conteudo">
-            <h2>Logaritmos</h2>
-            <p>\( \log_b(x) = y \leftrightarrow b^y = x \), onde \( b \) é a base.</p>
-        </section>
-
-        <section class="conteudo">
-            <h2>Equação do Segundo Grau</h2>
-            <p>\( ax^2 + bx + c = 0 \)</p>
-            <p>Fórmula de Bhaskara: \( x = \frac{-b \pm \sqrt{\Delta}}{2a} \), onde \( \Delta = b^2 - 4ac \).</p>
+            
+            <p><strong>Paralelepípedo:</strong> Volume: \( V = a \cdot b \cdot c \)</p>
+            <p>Área Total: \( A = 2 \cdot (ab + ac + bc) \)</p>
+            
+            <p><strong>Esfera:</strong> Volume: \( V = \frac{4}{3} \cdot \pi \cdot r^3 \)</p>
+            <p>Área: \( A = 4 \cdot \pi \cdot r^2 \)</p>
+            
+            <p><strong>Cilindro:</strong> Volume: \( V = \pi \cdot r^2 \cdot h \)</p>
+            <p>Área Total: \( A = 2 \cdot \pi \cdot r \cdot (r + h) \)</p>
+            
+            <p><strong>Cones:</strong> Volume: \( V = \frac{\pi \cdot r^2 \cdot h}{3} \)</p>
+            <p>Área Total: \( A = \pi \cdot r \cdot (r + g) \), onde \( g \) é a geratriz.</p>
+            
+            <p><strong>Tronco de Cone:</strong> Volume: \( V = \frac{\pi \cdot h}{3} \cdot (R^2 + R \cdot r + r^2) \)</p>
+            <p>Área Total: \( A = \pi \cdot (R + r) \cdot g + \pi \cdot R^2 + \pi \cdot r^2 \)</p>
+            
+            <p><strong>Pirâmide:</strong> Volume: \( V = \frac{B \cdot h}{3} \), onde \( B \) é a área da base.</p>
+            
+            <p><strong>Apótema:</strong> \( a = \sqrt{h^2 + \frac{b^2}{4}} \), onde \( h \) é a altura e \( b \) é a base.</p>
         </section>
     </main>
 
