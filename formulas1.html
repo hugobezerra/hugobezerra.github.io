@@ -52,72 +52,112 @@
 <body>
     <header>
         <h1>Fórmulas de Matemática</h1>
-        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico..." onkeyup="pesquisar()">
+        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico...">
     </header>
     
     <main>
         <section class="conteudo">
             <h2>Geometria Plana</h2>
-            <p><strong>Círculo:</strong> Área:</p>
-            <math>
-                <mi>A</mi>
-                <mo>=</mo>
-                <mi>&pi;</mi>
-                <mo>&#183;</mo>
-                <msup><mi>r</mi><mn>2</mn></msup>
-            </math>
-            <p>Comprimento:</p>
-            <math>
-                <mi>C</mi>
-                <mo>=</mo>
-                <mn>2</mn>
-                <mo>&#183;</mo>
-                <mi>&pi;</mi>
-                <mo>&#183;</mo>
-                <mi>r</mi>
-            </math>
+            <p><strong>Círculo:</strong> Área: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup>
+                    </mrow>
+                </math>
+            </p>
+            <p>Comprimento: 
+                <math>
+                    <mrow>
+                        <mi>C</mi><mo>=</mo><mn>2</mn><mo>&#x22C5;</mo><mi>π</mi><mo>&#x22C5;</mo><mi>r</mi>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Retângulo:</strong> Área: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Triângulo:</strong> Área: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                            </mrow>
+                            <mn>2</mn>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Perímetro do Triângulo:</strong> 
+                <math>
+                    <mrow>
+                        <mi>P</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi>
+                    </mrow>
+                </math>
+            </p>
         </section>
 
         <section class="conteudo">
-            <h2>Equação do Segundo Grau</h2>
-            <p>Equação:</p>
-            <math>
-                <mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn>
-            </math>
-            <p>Fórmula de Bhaskara:</p>
-            <math>
-                <mi>x</mi><mo>=</mo>
-                <mfrac>
+            <h2>Geometria Espacial</h2>
+            <p><strong>Cubo:</strong> Volume: 
+                <math>
                     <mrow>
-                        <mo>-</mo><mi>b</mi><mo>&#177;</mo>
-                        <msqrt>
-                            <msup><mi>b</mi><mn>2</mn></msup>
-                            <mo>-</mo>
-                            <mn>4</mn><mi>a</mi><mi>c</mi>
-                        </msqrt>
+                        <mi>V</mi><mo>=</mo><msup><mi>a</mi><mn>3</mn></msup>
                     </mrow>
+                </math>
+            </p>
+            <p>Área Total: 
+                <math>
                     <mrow>
-                        <mn>2</mn><mi>a</mi>
+                        <mi>A</mi><mo>=</mo><mn>6</mn><mo>&#x22C5;</mo><msup><mi>a</mi><mn>2</mn></msup>
                     </mrow>
-                </mfrac>
-            </math>
+                </math>
+            </p>
+            <p><strong>Esfera:</strong> Volume: 
+                <math>
+                    <mrow>
+                        <mi>V</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup>
+                            </mrow>
+                            <mn>3</mn>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p>Área da Superfície: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mn>4</mn><mo>&#x22C5;</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup>
+                    </mrow>
+                </math>
+            </p>
         </section>
 
         <section class="conteudo">
-            <h2>Probabilidade</h2>
-            <p><strong>Probabilidade de um Evento:</strong></p>
-            <math>
-                <mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo>
-                <mfrac>
-                    <mi>n(A)</mi>
-                    <mi>n(S)</mi>
-                </mfrac>
-            </math>
+            <h2>Progressões Aritmética (PA)</h2>
+            <p>
+                <math>
+                    <mrow>
+                        <mi>a</mi><msub><mi>n</mi></msub><mo>=</mo><mi>a</mi><msub><mi>1</mi></msub><mo>+</mo>
+                        <mrow>
+                            <mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                        </mrow>
+                        <mo>&#x22C5;</mo><mi>r</mi>
+                    </mrow>
+                </math>
+            </p>
         </section>
     </main>
 
     <footer>
-        <p>Fórmulas Matemáticas em HTML5 usando MathML</p>
+        <p>© 2024 Hugo de Araújo Bezerra</p>
     </footer>
 </body>
 </html>
+
