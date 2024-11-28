@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas de Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #e6f2ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fórmulas de Matemática</h1>
+        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico..." onkeyup="pesquisar()">
+    </header>
+    
+    <main>
+        <section class="conteudo">
+            <h2>Geometria Plana</h2>
+            <p><strong>Círculo:</strong> Área:</p>
+            <math>
+                <mi>A</mi>
+                <mo>=</mo>
+                <mi>&pi;</mi>
+                <mo>&#183;</mo>
+                <msup><mi>r</mi><mn>2</mn></msup>
+            </math>
+            <p>Comprimento:</p>
+            <math>
+                <mi>C</mi>
+                <mo>=</mo>
+                <mn>2</mn>
+                <mo>&#183;</mo>
+                <mi>&pi;</mi>
+                <mo>&#183;</mo>
+                <mi>r</mi>
+            </math>
+        </section>
+
+        <section class="conteudo">
+            <h2>Equação do Segundo Grau</h2>
+            <p>Equação:</p>
+            <math>
+                <mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn>
+            </math>
+            <p>Fórmula de Bhaskara:</p>
+            <math>
+                <mi>x</mi><mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mo>-</mo><mi>b</mi><mo>&#177;</mo>
+                        <msqrt>
+                            <msup><mi>b</mi><mn>2</mn></msup>
+                            <mo>-</mo>
+                            <mn>4</mn><mi>a</mi><mi>c</mi>
+                        </msqrt>
+                    </mrow>
+                    <mrow>
+                        <mn>2</mn><mi>a</mi>
+                    </mrow>
+                </mfrac>
+            </math>
+        </section>
+
+        <section class="conteudo">
+            <h2>Probabilidade</h2>
+            <p><strong>Probabilidade de um Evento:</strong></p>
+            <math>
+                <mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo>
+                <mfrac>
+                    <mi>n(A)</mi>
+                    <mi>n(S)</mi>
+                </mfrac>
+            </math>
+        </section>
+    </main>
+
+    <footer>
+        <p>Fórmulas Matemáticas em HTML5 usando MathML</p>
+    </footer>
+</body>
+</html>
