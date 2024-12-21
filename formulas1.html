@@ -153,11 +153,98 @@
                 </math>
             </p>
         </section>
+        
+        <!-- Novas Seções -->
+        <section class="conteudo">
+            <h2>Trigonometria</h2>
+            <p><strong>Seno:</strong> 
+                <math>
+                    <mrow>
+                        <mi>sen</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>oposto</mi>
+                            </mrow>
+                            <mi>hipotenusa</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Cosseno:</strong> 
+                <math>
+                    <mrow>
+                        <mi>cos</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>adjacente</mi>
+                            </mrow>
+                            <mi>hipotenusa</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Tangente:</strong> 
+                <math>
+                    <mrow>
+                        <mi>tan</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>oposto</mi>
+                            </mrow>
+                            <mi>adjacente</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Álgebra</h2>
+            <p><strong>Equação Quadrática:</strong> 
+                <math>
+                    <mrow>
+                        <mi>ax</mi><msup><mi>2</mi></msup><mo>+</mo><mi>bx</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Fórmula de Bhaskara:</strong> 
+                <math>
+                    <mrow>
+                        <mi>x</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mo>-</mo><mi>b</mi><mo>±</mo><msqrt>
+                                    <mrow>
+                                        <msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>a</mi><mi>c</mi>
+                                    </mrow>
+                                </msqrt>
+                            </mrow>
+                            <mrow>
+                                <mn>2</mn><mi>a</mi>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+        </section>
     </main>
 
     <footer>
         <p>© 2024 Hugo de Araújo Bezerra</p>
     </footer>
+    <script>
+        document.getElementById('campoPesquisa').addEventListener('input', function() {
+            var input = document.getElementById('campoPesquisa').value.toLowerCase();
+            var sections = document.querySelectorAll('section');
+            
+            sections.forEach(function(section) {
+                if (section.innerText.toLowerCase().includes(input)) {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
