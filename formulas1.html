@@ -1,380 +1,70 @@
-Vamos adicionar mais seções com fórmulas abrangendo os tópicos mencionados: Juros Simples e Composto, Matrizes e Determinantes, Números Complexos, Produtos Notáveis, Análise Combinatória, Probabilidade (incluindo probabilidade binomial), Logaritmos, e mais fórmulas na seção de Trigonometria.
-
-### Passo 1: Atualizar o arquivo HTML com as novas seções e fórmulas
-
-```html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmulas de Matemática</title>
+    <title>Fórmulas Matemáticas</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
+            line-height: 1.6;
         }
-        header {
-            background-color: #4682b4;
-            color: white;
-            padding: 20px 0;
-            position: sticky;
-            top: 0;
-            z-index: 10;
+        h1, h2 {
+            color: #2c3e50;
         }
-        header input {
-            width: 50%;
+        .formula {
+            background: #ecf0f1;
             padding: 10px;
-            font-size: 16px;
-            border: 2px solid #ccc;
+            margin: 10px 0;
             border-radius: 5px;
-            margin-top: 10px;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 40px;
-            padding: 20px;
-            background: #e6f2ff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #4682b4;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Fórmulas de Matemática</h1>
-        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico...">
-    </header>
-    
-    <main>
-        <!-- Geometria Plana -->
-        <section class="conteudo">
-            <h2>Geometria Plana</h2>
-            <!-- Fórmulas existentes e a fórmula de Heron -->
-        </section>
+    <h1>Fórmulas Matemáticas</h1>
 
-        <!-- Geometria Espacial -->
-        <section class="conteudo">
-            <h2>Geometria Espacial</h2>
-            <!-- Fórmulas existentes -->
-        </section>
+    <h2>Álgebra Básica</h2>
+    <div class="formula">\(a^2 - b^2 = (a - b)(a + b)\)</div>
 
-        <!-- Progressão Aritmética (PA) -->
-        <section class="conteudo">
-            <h2>Progressão Aritmética (PA)</h2>
-            <!-- Fórmulas existentes -->
-        </section>
+    <h2>Geometria Plana</h2>
+    <div class="formula">Área do triângulo: \(A = \frac{b \cdot h}{2}\)</div>
 
-        <!-- Progressão Geométrica (PG) -->
-        <section class="conteudo">
-            <h2>Progressão Geométrica (PG)</h2>
-            <!-- Fórmulas existentes -->
-        </section>
+    <h2>Geometria Espacial</h2>
+    <div class="formula">Volume do cubo: \(V = a^3\)</div>
 
-        <!-- Juros Simples e Composto -->
-        <section class="conteudo">
-            <h2>Juros Simples e Composto</h2>
-            <p><strong>Juros Simples:</strong> 
-                <math>
-                    <mrow>
-                        <mi>J</mi><mo>=</mo><mi>P</mi><mo>&#x22C5;</mo><mi>i</mi><mo>&#x22C5;</mo><mi>t</mi>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Montante (Juros Simples):</strong> 
-                <math>
-                    <mrow>
-                        <mi>M</mi><mo>=</mo><mi>P</mi><mo>+</mo><mi>J</mi>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Juros Compostos:</strong> 
-                <math>
-                    <mrow>
-                        <mi>M</mi><mo>=</mo><mi>P</mi><mo>&#x22C5;</mo><mo>(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mo>)</mo><msup><mi>t</mi></msup>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Matrizes e Determinantes</h2>
+    <div class="formula">Determinante de uma matriz 2x2: \(\text{det}(A) = ad - bc\), onde \(A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}\)</div>
+    <div class="formula">Soma de matrizes: \(A + B = \begin{bmatrix} a_1 + b_1 & a_2 + b_2 \\ a_3 + b_3 & a_4 + b_4 \end{bmatrix}\)</div>
 
-        <!-- Matrizes e Determinantes -->
-        <section class="conteudo">
-            <h2>Matrizes e Determinantes</h2>
-            <p><strong>Determinante de uma Matriz 2x2:</strong> 
-                <math>
-                    <mrow>
-                        <mo>|</mo><mi>A</mi><mo>|</mo><mo>=</mo><mi>a</mi><mo>&#x22C5;</mo><mi>d</mi><mo>-</mo><mi>b</mi><mo>&#x22C5;</mo><mi>c</mi>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Determinante de uma Matriz 3x3:</strong> 
-                <math>
-                    <mrow>
-                        <mo>|</mo><mi>A</mi><mo>|</mo><mo>=</mo><mi>a</mi><mi>e</mi><mi>i</mi><mo>+</mo><mi>b</mi><mi>f</mi><mi>g</mi><mo>+</mo><mi>c</mi><mi>d</mi><mi>h</mi><mo>-</mo><mi>c</mi><mi>e</mi><mi>g</mi><mo>-</mo><mi>b</mi><mi>d</mi><mi>i</mi><mo>-</mo><mi>a</mi><mi>f</mi><mi>h</mi>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Números Complexos</h2>
+    <div class="formula">Forma algébrica: \(z = a + bi\)</div>
+    <div class="formula">Módulo: \(|z| = \sqrt{a^2 + b^2}\)</div>
 
-        <!-- Números Complexos -->
-        <section class="conteudo">
-            <h2>Números Complexos</h2>
-            <p><strong>Forma Algébrica:</strong> 
-                <math>
-                    <mrow>
-                        <mi>z</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>bi</mi>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Forma Trigonométrica:</strong> 
-                <math>
-                    <mrow>
-                        <mi>z</mi><mo>=</mo><mi>r</mi><mo>(</mo><mi>cos</mi><mi>θ</mi><mo>+</mo><mi>i</mi><mi>sen</mi><mi>θ</mi><mo>)</mo>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Produtos Notáveis</h2>
+    <div class="formula">Quadrado da soma: \((a + b)^2 = a^2 + 2ab + b^2\)</div>
+    <div class="formula">Quadrado da diferença: \((a - b)^2 = a^2 - 2ab + b^2\)</div>
 
-        <!-- Produtos Notáveis -->
-        <section class="conteudo">
-            <h2>Produtos Notáveis</h2>
-            <p><strong>Quadrado da Soma:</strong> 
-                <math>
-                    <mrow>
-                        <mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)</mo><msup><mn>2</mn></msup><mo>=</mo><mi>a</mi><msup><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>ab</mi><mo>+</mo><mi>b</mi><msup><mn>2</mn></msup>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Quadrado da Diferença:</strong> 
-                <math>
-                    <mrow>
-                        <mo>(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo><msup><mn>2</mn></msup><mo>=</mo><mi>a</mi><msup><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>ab</mi><mo>+</mo><mi>b</mi><msup><mn>2</mn></msup>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Produto da Soma pela Diferença:</strong> 
-                <math>
-                    <mrow>
-                        <mo>(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>)(</mo><mi>a</mi><mo>-</mo><mi>b</mi><mo>)</mo><mo>=</mo><mi>a</mi><msup><mn>2</mn></msup><mo>-</mo><mi>b</mi><msup><mn>2</mn></msup>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Análise Combinatória</h2>
+    <div class="formula">Fatorial: \(n! = n \cdot (n-1) \cdot \ldots \cdot 1\)</div>
+    <div class="formula">Combinação: \(C(n, k) = \frac{n!}{k!(n-k)!}\)</div>
 
-        <!-- Análise Combinatória -->
-        <section class="conteudo">
-            <h2>Análise Combinatória</h2>
-            <p><strong>Fatorial:</strong> 
-                <math>
-                    <mrow>
-                        <mi>n</mi><mi>!</mi><mo>=</mo><mi>n</mi><mo>&#x22C5;</mo><mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>&#x22C5;</mo><mo>...</mo><mo>&#x22C5;</mo><mn>2</mn><mo>&#x22C5;</mo><mn>1</mn>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Combinação:</strong> 
-                <math>
-                    <mrow>
-                        <mo>(</mo><mfrac>
-                            <mrow>
-                                <mi>n</mi><mi>!</mi>
-                            </mrow>
-                            <mrow>
-                                <mi>k</mi><mi>!(</mi><mi>n</mi><mo>-</mo><mi>k</mi><mo>)</mo><mi>!</mi>
-                            </mrow>
-                        </mfrac><mo>)</mo>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Permutação:</strong> 
-                <math>
-                    <mrow>
-                        <mi>P</mi><msub><mi>n</mi></msub><mo>=</mo><mi>n</mi><mi>!</mi>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Probabilidade</h2>
+    <div class="formula">Probabilidade simples: \(P(A) = \frac{n(A)}{n(S)}\)</div>
+    <div class="formula">Probabilidade condicional: \(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</div>
+    <div class="formula">Probabilidade binomial: \(P(X = k) = C(n, k) \cdot p^k \cdot (1-p)^{n-k}\)</div>
 
-        <!-- Probabilidade -->
-        <section class="conteudo">
-            <h2>Probabilidade</h2>
-            <p><strong>Probabilidade Simples:</strong> 
-                <math>
-                    <mrow>
-                        <mi>P</mi><mo>(</mo><mi>A</mi><mo>)</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mi>n</mi><mo>(</mo><mi>A</mi><mo>)</mo>
-                            </mrow>
-                            <mrow>
-                                <mi>n</mi><mo>(</mo><mi>S</mi><mo>)</mo>
-                            </mrow>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Probabilidade Binomial:</strong> 
-                <math>
-                    <mrow>
-                        <mi>P</mi><mo>(</mo><mi>X</mi><mo>=</mo><mi>k</mi><mo>)</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mi>n</mi><mi>!</mi>
-                            </mrow>
-                            <mrow>
-                                <mi>k</mi><mi>!(</mi><mi>n</mi><mo>-</mo><mi>k</mi><mo>)</mo><mi>!</mi>
-                            </mrow>
-                        </mfrac>
-                        <mo>&#x22C5;</mo><msup>
-                            <mrow>
-                                <mi>p</mi>
-                            </mrow>
-                            <mrow>
-                                <mi>k</mi>
-                            </mrow>
-                        </msup>
-                        <mo>&#x22C5;</mo><msup>
-                            <mrow>
-                                <mn>1</mn><mo>-</mo><mi>p</mi>
-                            </mrow>
-                            <mrow>
-                                <mi>n</mi><mo>-</mo><mi>k</mi>
-                            </mrow>
-                        </msup>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Logaritmos</h2>
+    <div class="formula">Definição: \(\log_b(a) = x \iff b^x = a\)</div>
+    <div class="formula">Propriedades: \(\log_b(mn) = \log_b(m) + \log_b(n)\)</div>
 
-        <!-- Logaritmos -->
-        <section class="conteudo">
-            <h2>Logaritmos</h2>
-            <p><strong>Definição de Logaritmo:</strong> 
-                <math>
-                    <mrow>
-                        <mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>a</mi><mo>)</mo><mo>=</mo><mi>c</mi><mo>&#x3A;</mo><mo>se</mo><mo>&#xA0;</mo><mi>b</mi><msup><mi>c</mi></msup><mo>=</mo><mi>a</mi>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Propriedades dos Logaritmos:</strong></p>
-            <p><strong>Produto:</strong> 
-                <math>
-                    <mrow>
-                        <mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>xy</mi><mo>)</mo><mo>=</mo><mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>y</mi><mo>)</mo>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Divisão:</strong> 
-                <math>
-                    <mrow>
-                        <mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mfrac>
-                            <mrow>
-                                <mi>x</mi>
-                            </mrow>
-                            <mrow>
-                                <mi>y</mi>
-                            </mrow>
-                        </mfrac><mo>)</mo><mo>=</mo><mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo><mo>-</mo><mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>y</mi><mo>)</mo>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Potência:</strong> 
-                <math>
-                    <mrow>
-                        <mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><msup>
-                            <mrow>
-                                <mi>x</mi>
-                            </mrow>
-                            <mrow>
-                                <mi>y</mi>
-                            </mrow>
-                        </msup><mo>)</mo><mo>=</mo><mi>y</mi><mi>log</mi><msub><mi>b</mi></msub><mo>(</mo><mi>x</mi><mo>)</mo>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Mudança de Base:</strong> 
-                <math>
-                    <mrow>
-                        <mi>log</mi><msub><mi>a</mi></msub><mo>(</mo><mi>b</mi><mo>)</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mi>log</mi><msub><mi>c</mi></msub><mo>(</mo><mi>b</mi><mo>)</mo>
-                            </mrow>
-                            <mrow>
-                                <mi>log</mi><msub><mi>c</mi></msub><mo>(</mo><mi>a</mi><mo>)</mo>
-                            </mrow>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </p>
-        </section>
+    <h2>Trigonometria</h2>
+    <div class="formula">Relação fundamental: \(\sin^2(\theta) + \cos^2(\theta) = 1\)</div>
+    <div class="formula">Lei dos senos: \(\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}\)</div>
+    <div class="formula">Lei dos cossenos: \(c^2 = a^2 + b^2 - 2ab \cdot \cos(C)\)</div>
+    <div class="formula">Secante: \(\sec(\theta) = \frac{1}{\cos(\theta)}\)</div>
+    <div class="formula">Cossecante: \(\csc(\theta) = \frac{1}{\sin(\theta)}\)</div>
+    <div class="formula">Cotangente: \(\cot(\theta) = \frac{1}{\tan(\theta)}\)</div>
 
-        <!-- Trigonometria -->
-        <section class="conteudo">
-            <h2>Trigonometria</h2>
-            <p><strong>Seno:</strong> 
-                <math>
-                    <mrow>
-                        <mi>sen</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mi>oposto</mi>
-                            </mrow>
-                            <mi>hipotenusa</mi>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Cosseno:</strong> 
-                <math>
-                    <mrow>
-                        <mi>cos</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mi>adjacente</mi>
-                            </mrow>
-                            <mi>hipotenusa</mi>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Tangente:</strong> 
-                <math>
-                    <mrow>
-                        <mi>tan</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mi>oposto</mi>
-                            </mrow>
-                            <mi>adjacente</mi>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Secante:</strong> 
-                <math>
-                    <mrow>
-                        <mi>sec</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
-                        <mfrac>
-                            <mrow>
-                                <mn>1</mn>
-                            </mrow>
-                            <mi>cos</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo>
-                        </mfrac>
-                    </mrow>
-                </math>
-            </p>
-            <p><strong>Cossecante:</strong> 
+</body>
+</html>
