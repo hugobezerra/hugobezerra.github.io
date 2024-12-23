@@ -1,71 +1,250 @@
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórmulas Matemáticas</title>
+    <title>Fórmulas de Matemática</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
         }
-        h1, h2 {
-            color: #2c3e50;
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
-        .formula {
-            background: #ecf0f1;
+        header input {
+            width: 50%;
             padding: 10px;
-            margin: 10px 0;
+            font-size: 16px;
+            border: 2px solid #ccc;
             border-radius: 5px;
+            margin-top: 10px;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: #e6f2ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #4682b4;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Fórmulas Matemáticas</h1>
+    <header>
+        <h1>Fórmulas de Matemática</h1>
+        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico...">
+    </header>
+    
+    <main>
+        <section class="conteudo">
+            <h2>Geometria Plana</h2>
+            <p><strong>Círculo:</strong> Área: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup>
+                    </mrow>
+                </math>
+            </p>
+            <p>Comprimento: 
+                <math>
+                    <mrow>
+                        <mi>C</mi><mo>=</mo><mn>2</mn><mo>&#x22C5;</mo><mi>π</mi><mo>&#x22C5;</mo><mi>r</mi>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Retângulo:</strong> Área: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Triângulo:</strong> Área: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                            </mrow>
+                            <mn>2</mn>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Perímetro do Triângulo:</strong> 
+                <math>
+                    <mrow>
+                        <mi>P</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi>
+                    </mrow>
+                </math>
+            </p>
+        </section>
 
-    <h2>Álgebra Básica</h2>
-    <div class="formula">\(a^2 - b^2 = (a - b)(a + b)\)</div>
+        <section class="conteudo">
+            <h2>Geometria Espacial</h2>
+            <p><strong>Cubo:</strong> Volume: 
+                <math>
+                    <mrow>
+                        <mi>V</mi><mo>=</mo><msup><mi>a</mi><mn>3</mn></msup>
+                    </mrow>
+                </math>
+            </p>
+            <p>Área Total: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mn>6</mn><mo>&#x22C5;</mo><msup><mi>a</mi><mn>2</mn></msup>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Esfera:</strong> Volume: 
+                <math>
+                    <mrow>
+                        <mi>V</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup>
+                            </mrow>
+                            <mn>3</mn>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p>Área da Superfície: 
+                <math>
+                    <mrow>
+                        <mi>A</mi><mo>=</mo><mn>4</mn><mo>&#x22C5;</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup>
+                    </mrow>
+                </math>
+            </p>
+        </section>
 
-    <h2>Geometria Plana</h2>
-    <div class="formula">Área do triângulo: \(A = \frac{b \cdot h}{2}\)</div>
+        <section class="conteudo">
+            <h2>Progressões Aritmética (PA)</h2>
+            <p>
+                <math>
+                    <mrow>
+                        <mi>a</mi><msub><mi>n</mi></msub><mo>=</mo><mi>a</mi><msub><mi>1</mi></msub><mo>+</mo>
+                        <mrow>
+                            <mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                        </mrow>
+                        <mo>&#x22C5;</mo><mi>r</mi>
+                    </mrow>
+                </math>
+            </p>
+        </section>
+        
+        <!-- Novas Seções -->
+        <section class="conteudo">
+            <h2>Trigonometria</h2>
+            <p><strong>Seno:</strong> 
+                <math>
+                    <mrow>
+                        <mi>sen</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>oposto</mi>
+                            </mrow>
+                            <mi>hipotenusa</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Cosseno:</strong> 
+                <math>
+                    <mrow>
+                        <mi>cos</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>adjacente</mi>
+                            </mrow>
+                            <mi>hipotenusa</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Tangente:</strong> 
+                <math>
+                    <mrow>
+                        <mi>tan</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>oposto</mi>
+                            </mrow>
+                            <mi>adjacente</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+        </section>
 
-    <h2>Geometria Espacial</h2>
-    <div class="formula">Volume do cubo: \(V = a^3\)</div>
+        <section class="conteudo">
+            <h2>Álgebra</h2>
+            <p><strong>Equação Quadrática:</strong> 
+                <math>
+                    <mrow>
+                        <mi>ax</mi><msup><mi>2</mi></msup><mo>+</mo><mi>bx</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Fórmula de Bhaskara:</strong> 
+                <math>
+                    <mrow>
+                        <mi>x</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mo>-</mo><mi>b</mi><mo>±</mo><msqrt>
+                                    <mrow>
+                                        <msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>a</mi><mi>c</mi>
+                                    </mrow>
+                                </msqrt>
+                            </mrow>
+                            <mrow>
+                                <mn>2</mn><mi>a</mi>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+        </section>
+    </main>
 
-    <h2>Matrizes e Determinantes</h2>
-    <div class="formula">Determinante de uma matriz 2x2: \(\text{det}(A) = ad - bc\), onde \(A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}\)</div>
-    <div class="formula">Soma de matrizes: \(A + B = \begin{bmatrix} a_1 + b_1 & a_2 + b_2 \\ a_3 + b_3 & a_4 + b_4 \end{bmatrix}\)</div>
-
-    <h2>Números Complexos</h2>
-    <div class="formula">Forma algébrica: \(z = a + bi\)</div>
-    <div class="formula">Módulo: \(|z| = \sqrt{a^2 + b^2}\)</div>
-
-    <h2>Produtos Notáveis</h2>
-    <div class="formula">Quadrado da soma: \((a + b)^2 = a^2 + 2ab + b^2\)</div>
-    <div class="formula">Quadrado da diferença: \((a - b)^2 = a^2 - 2ab + b^2\)</div>
-
-    <h2>Análise Combinatória</h2>
-    <div class="formula">Fatorial: \(n! = n \cdot (n-1) \cdot \ldots \cdot 1\)</div>
-    <div class="formula">Combinação: \(C(n, k) = \frac{n!}{k!(n-k)!}\)</div>
-
-    <h2>Probabilidade</h2>
-    <div class="formula">Probabilidade simples: \(P(A) = \frac{n(A)}{n(S)}\)</div>
-    <div class="formula">Probabilidade condicional: \(P(A|B) = \frac{P(A \cap B)}{P(B)}\)</div>
-    <div class="formula">Probabilidade binomial: \(P(X = k) = C(n, k) \cdot p^k \cdot (1-p)^{n-k}\)</div>
-
-    <h2>Logaritmos</h2>
-    <div class="formula">Definição: \(\log_b(a) = x \iff b^x = a\)</div>
-    <div class="formula">Propriedades: \(\log_b(mn) = \log_b(m) + \log_b(n)\)</div>
-
-    <h2>Trigonometria</h2>
-    <div class="formula">Relação fundamental: \(\sin^2(\theta) + \cos^2(\theta) = 1\)</div>
-    <div class="formula">Lei dos senos: \(\frac{a}{\sin(A)} = \frac{b}{\sin(B)} = \frac{c}{\sin(C)}\)</div>
-    <div class="formula">Lei dos cossenos: \(c^2 = a^2 + b^2 - 2ab \cdot \cos(C)\)</div>
-    <div class="formula">Secante: \(\sec(\theta) = \frac{1}{\cos(\theta)}\)</div>
-    <div class="formula">Cossecante: \(\csc(\theta) = \frac{1}{\sin(\theta)}\)</div>
-    <div class="formula">Cotangente: \(\cot(\theta) = \frac{1}{\tan(\theta)}\)</div>
-
+    <footer>
+        <p>© 2024 Hugo de Araújo Bezerra</p>
+    </footer>
+    <script>
+        document.getElementById('campoPesquisa').addEventListener('input', function() {
+            var input = document.getElementById('campoPesquisa').value.toLowerCase();
+            var sections = document.querySelectorAll('section');
+            
+            sections.forEach(function(section) {
+                if (section.innerText.toLowerCase().includes(input)) {
+                    section.style.display = '';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
