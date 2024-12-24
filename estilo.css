@@ -40,3 +40,11 @@ footer {
   bottom: 0;
   width: 100%;
 }
+a {
+  color: #4682b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  text-decoration: underline;
+}
