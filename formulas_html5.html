@@ -278,16 +278,26 @@
         
             <div>
                 <p><strong>Cubo</strong></p>
-                <svg width="100" height="100">
-                    <rect x="20" y="20" width="60" height="60" stroke="black" stroke-width="2" fill="none" />
-                    <line x1="20" y1="20" x2="40" y2="10" stroke="black" stroke-width="2" />
-                    <line x1="80" y1="20" x2="100" y2="10" stroke="black" stroke-width="2" />
-                    <line x1="100" y1="10" x2="100" y2="70" stroke="black" stroke-width="2" />
-                    <line x1="100" y1="70" x2="80" y2="80" stroke="black" stroke-width="2" />
-                    <line x1="40" y1="10" x2="100" y2="10" stroke="black" stroke-width="2" />
-                    <line x1="40" y1="10" x2="40" y2="70" stroke="black" stroke-width="2" />
-                    <line x1="40" y1="70" x2="100" y2="70" stroke="black" stroke-width="2" />
-                    <text x="50" y="50" font-size="12" text-anchor="middle" fill="black">a</text>
+                <svg width="200" height="200">
+                    <!-- Face frontal -->
+                    <rect x="60" y="60" width="60" height="60" stroke="black" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+                    
+                    <!-- Face superior -->
+                    <polygon points="60,60 90,30 150,30 120,60" stroke="black" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+                    
+                    <!-- Face lateral -->
+                    <polygon points="150,30 120,60 120,120 150,90" stroke="black" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+                    
+                    <!-- Linhas de conexão -->
+                    <line x1="60" y1="60" x2="90" y2="30" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    <line x1="120" y1="60" x2="150" y2="30" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    <line x1="150" y1="30" x2="150" y2="90" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    <line x1="150" y1="90" x2="120" y2="120" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    <line x1="90" y1="30" x2="120" y2="60" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    <line x1="90" y1="30" x2="90" y2="60" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    <line x1="90" y1="60" x2="150" y2="60" stroke="black" stroke-width="2" stroke-dasharray="5,5" />
+                    
+                    <text x="90" y="90" font-size="12" text-anchor="middle" fill="black">a</text>
                 </svg>
                 <p>Volume: 
                     <math>
@@ -304,6 +314,7 @@
                     </math>
                 </p>
             </div>
+            
         
             <div>
                 <p><strong>Paralelepípedo</strong></p>
