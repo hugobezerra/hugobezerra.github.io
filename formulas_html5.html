@@ -403,47 +403,6 @@
                 </p>
             </div>
         
-            <div>
-                <p><strong>Prisma</strong></p>
-                <svg width="120" height="100">
-                    <!-- Adicionando um gradiente para a face superior -->
-                    <linearGradient id="grad" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:1" />
-                        <stop offset="100%" style="stop-color:rgb(200,200,200);stop-opacity:1" />
-                    </linearGradient>
-                    
-                    <!-- Desenho do prisma com sombreamento -->
-                    <polygon points="20,30 60,10 100,30 100,70 60,90 20,70" 
-                             stroke="black" stroke-width="2" fill="url(#grad)" />
-                    
-                    <!-- Linha auxiliar para sugerir profundidade -->
-                    <line x1="60" y1="10" x2="60" y2="50" stroke="black" stroke-width="1" stroke-dasharray="4" />
-                    
-                    <!-- Textos para identificar as dimensões -->
-                    <text x="60" y="5" font-size="12" text-anchor="middle" fill="black">b</text>
-                    <text x="60" y="95" font-size="12" text-anchor="middle" fill="black">B</text>
-                    <text x="110" y="50" font-size="12" text-anchor="middle" fill="black">h</text>
-                    
-                    <!-- Adicionando sombra na base -->
-                    <rect x="59" y="89" width="2" height="2" fill="#999" />
-                    <rect x="59" y="91" width="2" height="2" fill="#777" />
-                    <rect x="59" y="93" width="2" height="2" fill="#555" />
-                </svg>
-                <p>Volume: 
-                    <math>
-                        <mrow>
-                            <mi>V</mi><mo>=</mo><mi>a</mi><mo>&#x22C5;</mo><mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
-                        </mrow>
-                    </math>
-                </p>
-                <p>Área Total: 
-                    <math>
-                        <mrow>
-                            <mi>A</mi><mo>=</mo><mn>2</mn><mo>(</mo><mi>ab</mi><mo>+</mo><mi>ah</mi><mo>+</mo><mi>bh</mi><mo>)</mo>
-                        </mrow>
-                    </math>
-                </p>
-            </div>
         
             <div>
                 <p><strong>Cone</strong></p>
@@ -516,24 +475,18 @@
             <div>
                 <p><strong>Pirâmide</strong></p>
                 <svg width="150" height="120">
-                    <!-- Face frontal -->
                     <polygon points="50,10 10,80 90,80" stroke="black" stroke-width="2" fill="#CCC" />
-                    
-                    <!-- Linhas de profundidade (tracejadas) -->
-                    <line x1="50" y1="10" x2="30" y2="50" stroke="black" stroke-width="1" stroke-dasharray="4" />
-                    <line x1="30" y1="50" x2="70" y2="50" stroke="black" stroke-width="1" stroke-dasharray="4" />
-                    <line x1="70" y1="50" x2="50" y2="10" stroke="black" stroke-width="1" stroke-dasharray="4" />
-                    
-                    <!-- Linhas de conexão (tracejadas) -->
+                
+                    <polygon points="30,50 70,50 50,30" fill="#DDD" stroke="black" stroke-width="1" stroke-dasharray="4"/>
+                
+                    <line x1="50" y1="10" x2="50" y2="30" stroke="black" stroke-width="1" stroke-dasharray="4" />
                     <line x1="10" y1="80" x2="30" y2="50" stroke="black" stroke-width="1" stroke-dasharray="4" />
                     <line x1="90" y1="80" x2="70" y2="50" stroke="black" stroke-width="1" stroke-dasharray="4" />
-                    
-                    <!-- Textos para indicar variáveis -->
-                    <text x="50" y="90" font-size="12" text-anchor="middle" fill="black">b</text>
-                    <text x="40" y="30" font-size="12" text-anchor="middle" fill="black">h</text>
-                    
-                    <!-- Sombreamento para dar profundidade -->
-                    <polygon points="45,15 55,15 65,25 35,25" fill="#AAA" />
+                
+                    <polygon points="50,10 60,20 50,30 40,20" fill="#AAA" />
+                
+                    <text x="50" y="95" font-size="12" text-anchor="middle" fill="black">b</text>
+                    <text x="40" y="25" font-size="12" text-anchor="middle" fill="black">h</text>
                 </svg>
                 <p>Volume: 
                     <math>
