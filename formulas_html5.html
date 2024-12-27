@@ -405,12 +405,24 @@
         
             <div>
                 <p><strong>Prisma</strong></p>
-                <svg width="120" height="100">
+                <svg width="150" height="120">
+                    <!-- Face frontal -->
                     <polygon points="30,30 90,30 110,80 50,80" stroke="black" stroke-width="2" fill="none" />
-                    <line x1="30" y1="30" x2="50" y2="80" stroke="black" stroke-width="2" />
-                    <line x1="90" y1="30" x2="110" y2="80" stroke="black" stroke-width="2" />
+                    
+                    <!-- Linhas de profundidade (tracejadas) -->
+                    <line x1="30" y1="30" x2="10" y2="10" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="90" y1="30" x2="70" y2="10" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="10" y1="10" x2="70" y2="10" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="10" y1="10" x2="30" y2="30" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="70" y1="10" x2="90" y2="30" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Linhas de conexão (tracejadas) -->
                     <line x1="50" y1="80" x2="110" y2="80" stroke="black" stroke-width="2" />
-                    <text x="70" y="25" font-size="12" text-anchor="middle" fill="black">a</text>
+                    <line x1="10" y1="10" x2="30" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="70" y1="10" x2="90" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Textos para indicar variáveis -->
+                    <text x="60" y="25" font-size="12" text-anchor="middle" fill="black">a</text>
                     <text x="100" y="55" font-size="12" text-anchor="middle" fill="black">b</text>
                     <text x="40" y="55" font-size="12" text-anchor="middle" fill="black">h</text>
                 </svg>
