@@ -512,14 +512,22 @@
         
             <div>
                 <p><strong>Pirâmide</strong></p>
-                <svg width="100" height="100">
+                <svg width="150" height="120">
+                    <!-- Face frontal -->
                     <polygon points="50,10 10,80 90,80" stroke="black" stroke-width="2" fill="none" />
-                    <line x1="50" y1="10" x2="50" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
-                    <line x1="10" y1="80" x2="90" y2="80" stroke="black" stroke-width="2" />
-                    <line x1="10" y1="80" x2="50" y2="45" stroke="black" stroke-width="2" stroke-dasharray="4" />
-                    <line x1="90" y1="80" x2="50" y2="45" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Linhas de profundidade (tracejadas) -->
+                    <line x1="50" y1="10" x2="30" y2="50" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="30" y1="50" x2="70" y2="50" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="70" y1="50" x2="50" y2="10" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Linhas de conexão (tracejadas) -->
+                    <line x1="10" y1="80" x2="30" y2="50" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="90" y1="80" x2="70" y2="50" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Textos para indicar variáveis -->
                     <text x="50" y="90" font-size="12" text-anchor="middle" fill="black">b</text>
-                    <text x="30" y="50" font-size="12" text-anchor="middle" fill="black">h</text>
+                    <text x="40" y="30" font-size="12" text-anchor="middle" fill="black">h</text>
                 </svg>
                 <p>Volume: 
                     <math>
@@ -542,16 +550,25 @@
                     </math>
                 </p>
             </div>
-        
+            
             <div>
                 <p><strong>Tronco da Pirâmide</strong></p>
-                <svg width="100" height="100">
-                    <!-- Desenho do tronco da pirâmide -->
+                <svg width="150" height="120">
+                    <!-- Face frontal -->
                     <polygon points="30,30 70,30 90,80 10,80" stroke="black" stroke-width="2" fill="none" />
-                    <!-- Linhas tracejadas para indicar profundidade -->
-                    <line x1="30" y1="30" x2="10" y2="80" stroke="black" stroke-width="2" />
-                    <line x1="70" y1="30" x2="90" y2="80" stroke="black" stroke-width="2" />
+                    
+                    <!-- Linhas de profundidade (tracejadas) -->
+                    <line x1="30" y1="30" x2="20" y2="20" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="70" y1="30" x2="60" y2="20" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="20" y1="20" x2="60" y2="20" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="20" y1="20" x2="10" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="60" y1="20" x2="90" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Linhas de conexão (tracejadas) -->
+                    <line x1="10" y1="80" x2="10" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="90" y1="80" x2="90" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
                     <line x1="50" y1="30" x2="50" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
                     <!-- Textos para indicar variáveis -->
                     <text x="50" y="25" font-size="12" text-anchor="middle" fill="black">b</text>
                     <text x="50" y="90" font-size="12" text-anchor="middle" fill="black">B</text>
@@ -578,6 +595,7 @@
                     </math>
                 </p>
             </div>
+
         </section>
 
         <section class="conteudo">
