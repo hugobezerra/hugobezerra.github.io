@@ -10,7 +10,7 @@ body {
 
 /* Estilo para o contêiner principal do conteúdo */
 .conteudo {
-    max-width: 600px; /* Define uma largura máxima para o contêiner */
+    /* max-width: 600px;  Define uma largura máxima para o contêiner */
     margin: auto; /* Centraliza o contêiner horizontalmente */
     padding: 10px; /* Adiciona preenchimento interno ao contêiner */
     border: 1px solid #ccc; /* Adiciona uma borda cinza ao contêiner */
@@ -18,8 +18,9 @@ body {
 
 /* Estilo para a seção que contém figuras */
 .figura {
-    text-align: center; /* Centraliza o conteúdo dentro da figura */
-    margin: 20px 0; /* Adiciona espaçamento vertical acima e abaixo da figura */
+    width: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção do SVG */
+    max-width: 300px; /* Define uma largura máxima para o SVG */
 }
 
 /* Estilo para o cabeçalho da página */
