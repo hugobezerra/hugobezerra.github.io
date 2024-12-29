@@ -16,11 +16,6 @@ svg {
     margin: 0 auto; /* Centraliza o SVG */
 }
 
-/* Estilo para os DIVs */
-div {
-    text-align: center; /* Centraliza o conteúdo inline */
-}
-
 /* Estilo para o cabeçalho da página */
 header {
   background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
@@ -53,6 +48,7 @@ section {
   background: #e6f2ff; /* Define a cor de fundo da seção */
   border-radius: 10px; /* Arredonda os cantos da seção */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à seção */
+  text-align: center; /* Centraliza o conteúdo inline */
 }
 
 /* Estilo para o rodapé da página */
