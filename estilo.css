@@ -19,8 +19,7 @@ body {
 /* Estilo para a seção que contém figuras */
 .figura {
     width: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
-    height: auto; /* Mantém a proporção do SVG */
-    max-width: 300px; /* Define uma largura máxima para o SVG */
+    height: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
 }
 
 /* Estilo para o cabeçalho da página */
