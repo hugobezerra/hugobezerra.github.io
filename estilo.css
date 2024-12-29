@@ -13,6 +13,7 @@ body {
     /* max-width: 600px;  Define uma largura máxima para o contêiner */
     margin: auto; /* Centraliza o contêiner horizontalmente */
     padding: 10px; /* Adiciona preenchimento interno ao contêiner */
+    margin-bottom: 20px; /* Adiciona espaço abaixo de cada contêiner */
 }
 
 /* Estilo para a seção que contém figuras */
