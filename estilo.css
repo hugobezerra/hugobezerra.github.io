@@ -44,6 +44,7 @@ main {
 /* Estilo para seções dentro da página */
 section {
   display: flex; /* Ativa o modelo de layout flexível */
+  flex-direction: column; /* Adiciona esta linha para empilhar os elementos verticalmente */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente, se necessário */
   margin-bottom: 40px; /* Adiciona margem abaixo de cada seção */
