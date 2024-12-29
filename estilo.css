@@ -8,18 +8,11 @@ body {
   padding: 0; /* Remove preenchimento padrão do navegador */
 }
 
-/* Estilo para o contêiner principal do conteúdo */
-.conteudo {
-    /* max-width: 600px;  Define uma largura máxima para o contêiner */
-    margin: auto; /* Centraliza o contêiner horizontalmente */
-    padding: 10px; /* Adiciona preenchimento interno ao contêiner */
-    margin-bottom: 20px; /* Adiciona espaço abaixo de cada contêiner */
-}
-
-/* Estilo para a seção que contém figuras */
-.figura {
+/* Estilo para todos os SVGs */
+svg {
     width: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
-    height: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção do SVG */
+    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
 }
 
 /* Estilo para o cabeçalho da página */
