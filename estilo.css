@@ -16,6 +16,11 @@ svg {
     margin: 0 auto; /* Centraliza o SVG */
 }
 
+/* Estilo para os DIVs */
+div {
+    text-align: center; /* Centraliza o conteúdo inline */
+}
+
 /* Estilo para o cabeçalho da página */
 header {
   background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
