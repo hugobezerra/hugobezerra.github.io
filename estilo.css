@@ -6,6 +6,12 @@ body {
   margin: 0;
   padding: 0;
 }
+.container {
+    max-width: 600px; /* Define uma largura máxima */
+    margin: auto; /* Centraliza o container */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
 header {
   background-color: #4682b4;
   color: white;
