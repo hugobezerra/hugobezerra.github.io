@@ -1,59 +1,78 @@
+/* Estilo geral do corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+  background-color: #f0f8ff; /* Define a cor de fundo da página */
+  color: #333; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto dentro do corpo */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove preenchimento padrão do navegador */
 }
+
+/* Estilo para o contêiner principal do conteúdo */
 .conteudo {
-    max-width: 600px; /* Define uma largura máxima */
-    margin: auto; /* Centraliza o container */
-    padding: 10px;
-    border: 1px solid #ccc;
+    max-width: 600px; /* Define uma largura máxima para o contêiner */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    padding: 10px; /* Adiciona preenchimento interno ao contêiner */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza ao contêiner */
 }
+
+/* Estilo para a seção que contém figuras */
 .figura {
     text-align: center; /* Centraliza o conteúdo dentro da figura */
-    margin: 20px 0; /* Espaçamento vertical */
+    margin: 20px 0; /* Adiciona espaçamento vertical acima e abaixo da figura */
 }
+
+/* Estilo para o cabeçalho da página */
 header {
-  background-color: #4682b4;
-  color: white;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
+  color: white; /* Define a cor do texto no cabeçalho */
+  padding: 20px 0; /* Adiciona preenchimento vertical ao cabeçalho */
+  position: sticky; /* Faz o cabeçalho ficar fixo no topo ao rolar a página */
+  top: 0; /* Define a posição do cabeçalho no topo da página */
+  z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos */
 }
+
+/* Estilo para o campo de entrada no cabeçalho */
 header input {
-  width: 50%;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  margin-top: 10px;
+  width: 50%; /* Define a largura do campo de entrada como 50% do contêiner pai */
+  padding: 10px; /* Adiciona preenchimento interno ao campo de entrada */
+  font-size: 16px; /* Define o tamanho da fonte do texto no campo de entrada */
+  border: 2px solid #ccc; /* Adiciona uma borda cinza ao campo de entrada */
+  border-radius: 5px; /* Arredonda os cantos da borda do campo de entrada */
+  margin-top: 10px; /* Adiciona margem acima do campo de entrada */
 }
+
+/* Estilo para a área principal da página */
 main {
-  padding: 20px;
+  padding: 20px; /* Adiciona preenchimento interno à área principal */
 }
+
+/* Estilo para seções dentro da página */
 section {
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #e6f2ff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px; /* Adiciona margem abaixo de cada seção */
+  padding: 20px; /* Adiciona preenchimento interno à seção */
+  background: #e6f2ff; /* Define a cor de fundo da seção */
+  border-radius: 10px; /* Arredonda os cantos da seção */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à seção */
 }
+
+/* Estilo para o rodapé da página */
 footer {
-  background-color: #4682b4;
-  color: white;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: #4682b4; /* Define a cor de fundo do rodapé */
+  color: white; /* Define a cor do texto no rodapé */
+  padding: 10px 0; /* Adiciona preenchimento vertical ao rodapé */
+  position: fixed; /* Faz o rodapé ficar fixo na parte inferior da página */
+  bottom: 0; /* Define a posição do rodapé na parte inferior da página */
+  width: 100%; /* Faz o rodapé ocupar toda a largura da página */
 }
+
+/* Estilo para links */
 a {
-  text-decoration: none;
-  font-weight: bold;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Define o texto do link como negrito */
 }
+
+/* Estilo para links ao passar o mouse */
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
