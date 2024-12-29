@@ -13,6 +13,7 @@ svg {
     width: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
     height: auto; /* Mantém a proporção do SVG */
     display: block; /* Garante que não haja espaço em branco abaixo do SVG */
+    margin: 0 auto; /* Centraliza o SVG */
 }
 
 /* Estilo para o cabeçalho da página */
