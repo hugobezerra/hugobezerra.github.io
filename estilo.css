@@ -10,7 +10,7 @@ body {
 
 /* Estilo para todos os SVGs */
 svg {
-    width: 100%; /* Faz o SVG ocupar 100% da largura do contêiner */
+    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
     height: auto; /* Mantém a proporção do SVG */
     display: block; /* Garante que não haja espaço em branco abaixo do SVG */
     margin: 0 auto; /* Centraliza o SVG */
@@ -43,6 +43,9 @@ main {
 
 /* Estilo para seções dentro da página */
 section {
+  display: flex; /* Ativa o modelo de layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente, se necessário */
   margin-bottom: 40px; /* Adiciona margem abaixo de cada seção */
   padding: 20px; /* Adiciona preenchimento interno à seção */
   background: #e6f2ff; /* Define a cor de fundo da seção */
