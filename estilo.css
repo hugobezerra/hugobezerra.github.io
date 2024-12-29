@@ -12,6 +12,10 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
 }
+.figura {
+    text-align: center; /* Centraliza o conteúdo dentro da figura */
+    margin: 20px 0; /* Espaçamento vertical */
+}
 header {
   background-color: #4682b4;
   color: white;
