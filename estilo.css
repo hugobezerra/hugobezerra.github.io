@@ -45,7 +45,10 @@ section {
 }
 /* Estilo para todos os DIVs */
 div {
-    text-align: center;
+    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção do SVG */
+    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
+    margin: 0 auto; /* Centraliza o SVG */
 }
 /* Estilo para todos os SVGs */
 svg {
