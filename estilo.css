@@ -45,7 +45,10 @@ section {
 }
 /* Estilo para todos os DIVs */
 div {
-    text-align: center;
+  text-align: center;
+  display: flex; /* Adiciona flexbox ao div */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 /* Estilo para todos os SVGs */
 svg {
