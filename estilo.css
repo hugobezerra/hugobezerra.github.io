@@ -34,8 +34,10 @@ main {
 section {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     flex-direction: column;
+    padding: 20px;
 }
 /* Estilo para todos os DIVs */
 div {
@@ -44,12 +46,15 @@ div {
     align-items: center;
     width: 80%;
     height: auto;
-    margin: 0 auto
+    margin: 20px auto; /* Margem para criar espaço antes e depois */
+    text-align: center; /* Centraliza conteúdo de texto */
 }
 /* Estilo para todos os SVGs */
 svg {
-    display: block;
-    margin: 0 auto;
+    width: 50%; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+    margin: 20px auto; /* Adiciona margens superior e inferior */
+    display: block; /* Garante o alinhamento */
 }
 /* Estilo para o rodapé da página */
 footer {
@@ -116,3 +121,14 @@ h1 {
                 font-size: 1em;
             }
         }
+@media (max-width: 768px) {
+    svg {
+        width: 70%; /* Reduz o tamanho em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    svg {
+        width: 90%; /* Quase ocupa a largura total */
+    }
+}
