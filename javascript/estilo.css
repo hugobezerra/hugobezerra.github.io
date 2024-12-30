@@ -49,13 +49,6 @@ div {
     margin: 20px auto; /* Margem para criar espaço antes e depois */
     text-align: center; /* Centraliza conteúdo de texto */
 }
-/* Estilo para todos os SVGs */
-svg {
-    width: 50%; /* Ajuste para o tamanho desejado */
-    height: auto; /* Mantém a proporção */
-    margin: 20px auto; /* Adiciona margens superior e inferior */
-    display: block; /* Garante o alinhamento */
-}
 /* Estilo para o rodapé da página */
 footer {
   background-color: #4682b4; /* Define a cor de fundo do rodapé */
@@ -121,35 +114,8 @@ h1 {
                 font-size: 1em;
             }
         }
-@media (max-width: 768px) {
-    svg {
-        width: 70%; /* Reduz o tamanho em telas menores */
-    }
-}
-
-@media (max-width: 480px) {
-    svg {
-        width: 90%; /* Quase ocupa a largura total */
-    }
-}
 /*uso de canvas*/
 canvas {
             border: 1px solid #000;
             margin: 20px;
         }
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-}
-.shape {
-    margin: 20px;
-}
-/*uso de css puro para desenhar*/
-.circle {
-    width: 100px;
-    height: 100px;
-    background-color: #000;
-    border-radius: 50%;
-}
