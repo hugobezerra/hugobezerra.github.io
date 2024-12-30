@@ -132,10 +132,21 @@ h1 {
         width: 90%; /* Quase ocupa a largura total */
     }
 }
+/*uso de canvas*/
 canvas {
             border: 1px solid #000;
             margin: 20px;
         }
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.shape {
+    margin: 20px;
+}
+/*uso de css puro para desenhar*/
 .circle {
     width: 100px;
     height: 100px;
