@@ -8,15 +8,6 @@ body {
   padding: 0; /* Remove preenchimento padrão do navegador */
   line-height: 1.6; /*Define a altura da linha, melhorando a legibilidade do texto.*/
 }
-
-/* Estilo para todos os SVGs */
-svg {
-    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
-    height: auto; /* Mantém a proporção do SVG */
-    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
-    margin: 0 auto; /* Centraliza o SVG */
-}
-
 /* Estilo para o cabeçalho da página */
 header {
   background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
@@ -26,7 +17,6 @@ header {
   top: 0; /* Define a posição do cabeçalho no topo da página */
   z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos */
 }
-
 /* Estilo para o campo de entrada no cabeçalho */
 header input {
   width: 50%; /* Define a largura do campo de entrada como 50% do contêiner pai */
@@ -36,12 +26,10 @@ header input {
   border-radius: 5px; /* Arredonda os cantos da borda do campo de entrada */
   margin-top: 10px; /* Adiciona margem acima do campo de entrada */
 }
-
 /* Estilo para a área principal da página */
 main {
   padding: 20px; /* Adiciona preenchimento interno à área principal */
 }
-
 /* Estilo para seções dentro da página */
 section {
   display: flex; /* Ativa o modelo de layout flexível */
@@ -55,7 +43,17 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à seção */
   text-align: center; /* Centraliza o conteúdo inline */
 }
-
+/* Estilo para todos os DIVs */
+div {
+    text-align: center;
+}
+/* Estilo para todos os SVGs */
+svg {
+    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção do SVG */
+    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
+    margin: 0 auto; /* Centraliza o SVG */
+}
 /* Estilo para o rodapé da página */
 footer {
   background-color: #4682b4; /* Define a cor de fundo do rodapé */
