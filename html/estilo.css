@@ -1,0 +1,155 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+  background-color: #f0f8ff; /* Define a cor de fundo da página */
+  color: #333; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto dentro do corpo */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove preenchimento padrão do navegador */
+  line-height: 1.6; /*Define a altura da linha, melhorando a legibilidade do texto.*/
+}
+/* Estilo para o cabeçalho da página */
+header {
+  background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
+  color: white; /* Define a cor do texto no cabeçalho */
+  padding: 20px 0; /* Adiciona preenchimento vertical ao cabeçalho */
+  position: sticky; /* Faz o cabeçalho ficar fixo no topo ao rolar a página */
+  top: 0; /* Define a posição do cabeçalho no topo da página */
+  z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+/* Estilo para o campo de entrada no cabeçalho */
+header input {
+  width: 50%; /* Define a largura do campo de entrada como 50% do contêiner pai */
+  padding: 10px; /* Adiciona preenchimento interno ao campo de entrada */
+  font-size: 16px; /* Define o tamanho da fonte do texto no campo de entrada */
+  border: 2px solid #ccc; /* Adiciona uma borda cinza ao campo de entrada */
+  border-radius: 5px; /* Arredonda os cantos da borda do campo de entrada */
+  margin-top: 10px; /* Adiciona margem acima do campo de entrada */
+}
+/* Estilo para a área principal da página */
+main {
+  padding: 20px; /* Adiciona preenchimento interno à área principal */
+}
+/* Estilo para seções dentro da página */
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+/* Estilo para todos os DIVs */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 20px auto; /* Margem para criar espaço antes e depois */
+    text-align: center; /* Centraliza conteúdo de texto */
+}
+/* Estilo para todos os SVGs */
+svg {
+    width: 50%; /* Ajuste para o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+    margin: 20px auto; /* Adiciona margens superior e inferior */
+    display: block; /* Garante o alinhamento */
+}
+/* Estilo para o rodapé da página */
+footer {
+  background-color: #4682b4; /* Define a cor de fundo do rodapé */
+  color: white; /* Define a cor do texto no rodapé */
+  padding: 10px 0; /* Adiciona preenchimento vertical ao rodapé */
+  position: fixed; /* Faz o rodapé ficar fixo na parte inferior da página */
+  bottom: 0; /* Define a posição do rodapé na parte inferior da página */
+  width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+}
+
+/* Estilo para links */
+a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Define o texto do link como negrito */
+}
+
+/* Estilo para links ao passar o mouse */
+a:hover {
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+/*Define o tamanho da fonte para os cabeçalhos:*/
+h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+/*Regras de mídia para dispositivos com largura de tela até 768 pixels*/
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+/*Regras de mídia para dispositivos com largura de tela até 480 pixels*/
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+
+            h3 {
+                font-size: 1em;
+            }
+        }
+@media (max-width: 768px) {
+    svg {
+        width: 70%; /* Reduz o tamanho em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    svg {
+        width: 90%; /* Quase ocupa a largura total */
+    }
+}
+/*uso de canvas*/
+canvas {
+            border: 1px solid #000;
+            margin: 20px;
+        }
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.shape {
+    margin: 20px;
+}
+/*uso de css puro para desenhar*/
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+}
