@@ -7,15 +7,16 @@ function pesquisar() {
     const elementos = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
     
     // Itera sobre cada elemento da coleção "elementos"
-    for (let elemento of elementos) {
+    elementos.forEach(elemento => {
         // Verifica se o texto do elemento (também convertido para minúsculas) contém o valor do input
         if (elemento.innerText.toLowerCase().includes(input)) {
             // Se o texto do elemento contém o valor do input, exibe o elemento
-            elemento.style.display = "block";
+            elemento.style.display = "block"; // ou "inline" se preferir
         } else {
             // Se o texto do elemento não contém o valor do input, oculta o elemento
             elemento.style.display = "none";
         }
-    }
+    });
 }
+
 
