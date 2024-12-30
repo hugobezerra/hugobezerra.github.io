@@ -662,19 +662,7 @@
     <footer>
         <p>© 2024 Hugo de Araújo Bezerra</p>
     </footer>
-    <script>
-        document.getElementById('campoPesquisa').addEventListener('input', function() {
-            var input = document.getElementById('campoPesquisa').value.toLowerCase();
-            var sections = document.querySelectorAll('section');
-            
-            sections.forEach(function(section) {
-                if (section.innerText.toLowerCase().includes(input)) {
-                    section.style.display = '';
-                } else {
-                    section.style.display = 'none';
-                }
-            });
-        });
-    </script>
+<!-- Referência ao arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
