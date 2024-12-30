@@ -3,8 +3,8 @@ function pesquisar() {
     // Obtém o valor do campo de pesquisa, converte para minúsculas para facilitar a comparação
     const input = document.getElementById("campoPesquisa").value.toLowerCase();
     
-    // Obtém todos os elementos com a classe "conteudo" e os armazena em uma coleção
-    const elementos = document.getElementsByClassName("conteudo");
+    // Obtém todos os elementos de cabeçalho (h1, h2, h3, h4, h5, h6) e os armazena em uma coleção
+    const elementos = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
     
     // Itera sobre cada elemento da coleção "elementos"
     for (let elemento of elementos) {
@@ -18,3 +18,4 @@ function pesquisar() {
         }
     }
 }
+
