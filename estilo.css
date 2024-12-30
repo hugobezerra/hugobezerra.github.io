@@ -32,16 +32,10 @@ main {
 }
 /* Estilo para seções dentro da página */
 section {
-  display: flex; /* Ativa o modelo de layout flexível */
-  flex-direction: column; /* Adiciona esta linha para empilhar os elementos verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente, se necessário */
-  margin-bottom: 40px; /* Adiciona margem abaixo de cada seção */
-  padding: 20px; /* Adiciona preenchimento interno à seção */
-  background: #e6f2ff; /* Define a cor de fundo da seção */
-  border-radius: 10px; /* Arredonda os cantos da seção */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à seção */
-  text-align: center; /* Centraliza o conteúdo inline */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 /* Estilo para todos os DIVs */
 div {
