@@ -1,134 +1,121 @@
 /* Estilo geral do corpo da página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
-  color: #333;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
+  font-family: Arial, sans-serif; /* Define a fonte padrão da página */
+  background-color: #f0f8ff; /* Define a cor de fundo da página */
+  color: #333; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto dentro do corpo */
+  margin: 0; /* Remove margens padrão do navegador */
+  padding: 0; /* Remove preenchimento padrão do navegador */
+  line-height: 1.6; /*Define a altura da linha, melhorando a legibilidade do texto.*/
 }
-
 /* Estilo para o cabeçalho da página */
 header {
-  background-color: #4682b4;
-  color: white;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  background-color: #4682b4; /* Define a cor de fundo do cabeçalho */
+  color: white; /* Define a cor do texto no cabeçalho */
+  padding: 20px 0; /* Adiciona preenchimento vertical ao cabeçalho */
+  position: sticky; /* Faz o cabeçalho ficar fixo no topo ao rolar a página */
+  top: 0; /* Define a posição do cabeçalho no topo da página */
+  z-index: 10; /* Garante que o cabeçalho fique acima de outros elementos */
 }
-
 /* Estilo para o campo de entrada no cabeçalho */
 header input {
-  width: 50%;
-  padding: 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-  margin-top: 10px;
+  width: 50%; /* Define a largura do campo de entrada como 50% do contêiner pai */
+  padding: 10px; /* Adiciona preenchimento interno ao campo de entrada */
+  font-size: 16px; /* Define o tamanho da fonte do texto no campo de entrada */
+  border: 2px solid #ccc; /* Adiciona uma borda cinza ao campo de entrada */
+  border-radius: 5px; /* Arredonda os cantos da borda do campo de entrada */
+  margin-top: 10px; /* Adiciona margem acima do campo de entrada */
 }
-
 /* Estilo para a área principal da página */
 main {
-  padding: 20px;
+  padding: 20px; /* Adiciona preenchimento interno à área principal */
 }
-
 /* Estilo para seções dentro da página */
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-  padding: 20px;
-  background: #e6f2ff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  display: flex; /* Ativa o modelo de layout flexível */
+  flex-direction: column; /* Adiciona esta linha para empilhar os elementos verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente, se necessário */
+  margin-bottom: 40px; /* Adiciona margem abaixo de cada seção */
+  padding: 20px; /* Adiciona preenchimento interno à seção */
+  background: #e6f2ff; /* Define a cor de fundo da seção */
+  border-radius: 10px; /* Arredonda os cantos da seção */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave à seção */
+  text-align: center; /* Centraliza o conteúdo inline */
 }
-
 /* Estilo para todos os DIVs */
 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;  /* Certifica-se de que o contêiner ocupe toda a largura disponível */
+    text-align: center;
 }
-
 /* Estilo para todos os SVGs */
 svg {
-  width: 80%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
+    height: auto; /* Mantém a proporção do SVG */
+    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
+    margin: 0 auto; /* Centraliza o SVG */
 }
-
 /* Estilo para o rodapé da página */
 footer {
-  background-color: #4682b4;
-  color: white;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: #4682b4; /* Define a cor de fundo do rodapé */
+  color: white; /* Define a cor do texto no rodapé */
+  padding: 10px 0; /* Adiciona preenchimento vertical ao rodapé */
+  position: fixed; /* Faz o rodapé ficar fixo na parte inferior da página */
+  bottom: 0; /* Define a posição do rodapé na parte inferior da página */
+  width: 100%; /* Faz o rodapé ocupar toda a largura da página */
 }
 
 /* Estilo para links */
 a {
-  text-decoration: none;
-  font-weight: bold;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  font-weight: bold; /* Define o texto do link como negrito */
 }
 
 /* Estilo para links ao passar o mouse */
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Sublinha o link ao passar o mouse */
 }
-
-/* Define o tamanho da fonte para os cabeçalhos */
+/*Define o tamanho da fonte para os cabeçalhos:*/
 h1 {
-  font-size: 2.5em;
-}
+            font-size: 2.5em;
+        }
 
-h2 {
-  font-size: 2em;
-}
+        h2 {
+            font-size: 2em;
+        }
 
-h3 {
-  font-size: 1.5em;
-}
+        h3 {
+            font-size: 1.5em;
+        }
 
-a {
-  color: #0000EE;
-  text-decoration: none;
-}
+        a {
+            color: #0000EE;
+            text-decoration: none;
+        }
+/*Regras de mídia para dispositivos com largura de tela até 768 pixels*/
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
 
-/* Regras de mídia para dispositivos com largura de tela até 768 pixels */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-  }
+            h2 {
+                font-size: 1.5em;
+            }
 
-  h2 {
-    font-size: 1.5em;
-  }
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+/*Regras de mídia para dispositivos com largura de tela até 480 pixels*/
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
 
-  h3 {
-    font-size: 1.2em;
-  }
-}
+            h2 {
+                font-size: 1.2em;
+            }
 
-/* Regras de mídia para dispositivos com largura de tela até 480 pixels */
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
-
-  h3 {
-    font-size: 1em;
-  }
-}
+            h3 {
+                font-size: 1em;
+            }
+        }
