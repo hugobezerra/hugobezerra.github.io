@@ -7,21 +7,6 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">   
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>
-        // Função para pesquisar tópicos e fórmulas
-        function pesquisar() {
-            const input = document.getElementById("campoPesquisa").value.toLowerCase();
-            const elementos = document.getElementsByClassName("conteudo");
-            for (let elemento of elementos) {
-                if (elemento.innerText.toLowerCase().includes(input)) {
-                    elemento.style.display = "block";
-                } else {
-                    elemento.style.display = "none";
-                }
-            }
-        }
-    </script>
-
 </head>
 <body>
     <header>
@@ -143,5 +128,7 @@
     <footer>
         <p>&copy; 2024 Hugo de Araújo Bezerra - Fórmulas de Matemática</p>
     </footer>
+    <!-- Referência ao arquivo JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
