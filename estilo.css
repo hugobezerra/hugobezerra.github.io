@@ -39,19 +39,17 @@ section {
 }
 /* Estilo para todos os DIVs */
 div {
-    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
-    height: auto; /* Mantém a proporção do SVG */
-    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
-    margin: 0 auto; /* Centraliza o SVG */
-    border: 1px solid red; /*usa bordas*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto
 }
 /* Estilo para todos os SVGs */
 svg {
-    width: 80%; /* Faz o SVG ocupar 80% da largura do contêiner */
-    height: auto; /* Mantém a proporção do SVG */
-    display: block; /* Garante que não haja espaço em branco abaixo do SVG */
-    margin: 0 auto; /* Centraliza o SVG */
-    border: 1px solid blue; /*usa bordas*/
+    display: block;
+    margin: 0 auto;
 }
 /* Estilo para o rodapé da página */
 footer {
