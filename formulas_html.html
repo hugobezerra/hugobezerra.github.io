@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas de Matemática</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+</head>
+<body>
+    <header>
+        <h1>Fórmulas de Matemática</h1>
+        <p><a href="/index.html">Voltar à Página Inicial</a></p>
+        <input type="text" id="campoPesquisa" placeholder="Pesquisar fórmula ou tópico...">
+    </header>
+    
+    <main>
+         
+        <section>
+            <h2>Geometria Plana</h2>
+            
+            <div>
+                <h3>Círculo</h3>
+                &#9675; <!-- Círculo vazio -->
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Retângulo</h3>
+                <svg>
+                    <rect width="100" height="50" stroke="black" stroke-width="2" fill="none" />
+                    <text x="50" y="45" font-size="10" fill="black" text-anchor="middle">b</text>
+                    <text x="5" y="25" font-size="10" fill="black" text-anchor="middle">h</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Triângulo</h3>
+                &#9650; <!-- Triângulo para cima -->
+
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                            <mo>,</mo>
+                            <mo> ou por Heron </mo>
+                            <mi>A</mi><mo>=</mo>
+                            <msqrt>
+                                <mrow>
+                                    <mi>s</mi><mo>(</mo><mi>s</mi><mo>-</mo><mi>a</mi><mo>)</mo><mo>(</mo><mi>s</mi><mo>-</mo><mi>b</mi><mo>)</mo><mo>(</mo><mi>s</mi><mo>-</mo><mi>c</mi><mo>)</mo>
+                                </mrow>
+                            </msqrt>
+                            <mo>,</mo>
+                            <mo> onde </mo>
+                            <mi>s</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Trapézio</h3>
+                <svg>
+                    <polygon points="10,40 90,40 70,10 30,10" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="30" y1="10" x2="30" y2="40" stroke="black" stroke-dasharray="4" />
+                    <text x="30" y="25" font-size="10" fill="black" text-anchor="start">h</text>
+                    <text x="50" y="45" font-size="10" fill="black" text-anchor="middle">B</text>
+                    <text x="50" y="5" font-size="10" fill="black" text-anchor="middle">b</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mo>(</mo><mi>B</mi><mo>+</mo><mi>b</mi><mo>)</mo><mi>h</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Losango</h3>
+                <svg>
+                    <polygon points="50,10 90,50 50,90 10,50" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-dasharray="4" />
+                    <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-dasharray="4" />
+                    <text x="55" y="50" font-size="10" fill="black" text-anchor="start">d</text>
+                    <text x="50" y="5" font-size="10" fill="black" text-anchor="middle">D</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>D</mi><mo>&#x22C5;</mo><mi>d</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Triângulo Isósceles</h3>
+                <svg>
+                    <polygon points="50,15 85,85 15,85" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="50" y1="15" x2="50" y2="85" stroke="black" stroke-dasharray="4" />
+                    <text x="50" y="50" font-size="10" fill="black" text-anchor="start">h</text>
+                    <text x="50" y="95" font-size="10" fill="black" text-anchor="middle">b</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                                </mrow>
+                                <mn>2</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Triângulo Equilátero</h3>
+                <svg>
+                    <polygon points="50,15 85,85 15,85" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="50" y1="15" x2="50" y2="85" stroke="black" stroke-dasharray="4" />
+                    <text x="50" y="50" font-size="10" fill="black" text-anchor="start">h</text>
+                    <text x="50" y="95" font-size="10" fill="black" text-anchor="middle">a</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <msqrt>
+                                        <mn>3</mn>
+                                    </msqrt><msup><mi>a</mi><mn>2</mn></msup>
+                                </mrow>
+                                <mn>4</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Paralelogramo</h3>
+                <svg>
+                    <polygon points="10,40 90,40 80,10 0,10" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="10" y1="10" x2="10" y2="40" stroke="black" stroke-dasharray="4" />
+                    <text x="10" y="25" font-size="10" fill="black" text-anchor="start">h</text>
+                    <text x="50" y="45" font-size="10" fill="black" text-anchor="middle">b</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Figuras Inscritas</h3>
+                <svg>
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none" />
+                    <circle cx="50" cy="50" r="20" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="50" y1="50" x2="90" y2="50" stroke="black" stroke-dasharray="4" />
+                    <text x="70" y="45" font-size="10" fill="black">r</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mfrac><mrow><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Setor Circular</h3>
+                <svg>
+                    <path d="M50,50 L90,50 A40,40 0 0,1 50,90 Z" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="50" y1="50" x2="90" y2="50" stroke="black" stroke-dasharray="4" />
+                    <text x="70" y="45" font-size="10" fill="black">r</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mfrac><mrow><mi>θ</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Coroa Circular</h3>
+                <svg>
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none" />
+                    <circle cx="50" cy="50" r="20" stroke="white" stroke-width="2" fill="none" />
+                    <line x1="50" y1="50" x2="90" y2="50" stroke="black" stroke-dasharray="4" />
+                    <text x="70" y="45" font-size="10" fill="black">R</text>
+                    <line x1="50" y1="50" x2="70" y2="50" stroke="black" stroke-dasharray="4" />
+                    <text x="60" y="45" font-size="10" fill="black">r</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>-</mo><msup><mi>r</mi><mn>2</mn></msup></mrow>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <h3>Hexágono</h3>
+                <svg>
+                    <polygon points="50,10 90,30 90,70 50,90 10,70 10,30" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-dasharray="4" />
+                    <text x="50" y="50" font-size="10" fill="black" text-anchor="start">h</text>
+                    <text x="50" y="5" font-size="10" fill="black" text-anchor="middle">a</text>
+                </svg>
+                <p>Área: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mfrac><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Geometria Espacial</h2>
+
+            <div>
+                <p><strong>Cubo</strong></p>
+                <svg>
+                    <rect x="10" y="10" width="60" height="60" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="10" y1="10" x2="30" y2="30" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="70" y1="10" x2="90" y2="30" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="70" y1="70" x2="90" y2="90" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="10" y1="70" x2="30" y2="90" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <rect x="30" y="30" width="60" height="60" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="30" y1="30" x2="70" y2="30" stroke="black" stroke-width="2" />
+                    <line x1="90" y1="30" x2="90" y2="90" stroke="black" stroke-width="2" />
+                    <line x1="30" y1="90" x2="70" y2="90" stroke="black" stroke-width="2" />
+                    <text x="50" y="50" font-size="12" text-anchor="middle" fill="black">a</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo><msup><mi>a</mi><mn>3</mn></msup>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área Total: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mn>6</mn><mo>&#x22C5;</mo><msup><mi>a</mi><mn>2</mn></msup>
+                        </mrow>
+                    </math>
+                </p>
+            </div>                     
+        
+            <div>
+                <p><strong>Paralelepípedo</strong></p>
+                <svg>
+                    <!-- Desenho do paralelepípedo com profundidade -->
+                    
+                    <!-- Face frontal -->
+                    <rect x="40" y="40" width="100" height="60" stroke="black" stroke-width="2" fill="none" />
+                    
+                    <!-- Linhas de profundidade (tracejadas) -->
+                    <line x1="40" y1="40" x2="20" y2="20" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="140" y1="40" x2="120" y2="20" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="20" y1="20" x2="120" y2="20" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="20" y1="20" x2="20" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="120" y1="20" x2="120" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Linhas de conexão (tracejadas) -->
+                    <line x1="40" y1="100" x2="20" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <line x1="140" y1="100" x2="120" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    
+                    <!-- Textos para indicar variáveis -->
+                    <text x="90" y="55" font-size="12" text-anchor="middle" fill="black">a</text>
+                    <text x="110" y="80" font-size="12" text-anchor="middle" fill="black">b</text>
+                    <text x="30" y="70" font-size="12" text-anchor="middle" fill="black">h</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo><mi>a</mi><mo>&#x22C5;</mo><mi>b</mi><mo>&#x22C5;</mo><mi>h</mi>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área Total: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mn>2</mn><mo>(</mo><mi>ab</mi><mo>+</mo><mi>ah</mi><mo>+</mo><mi>bh</mi><mo>)</mo>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+        
+            <div>
+                <p><strong>Esfera</strong></p>
+                <svg>
+                    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none" />
+                    <ellipse cx="50" cy="50" rx="40" ry="15" stroke="black" stroke-width="1" fill="none" stroke-dasharray="4" />
+                    <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <text x="50" y="45" font-size="12" text-anchor="middle" fill="black">r</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup>
+                                </mrow>
+                                <mn>3</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área da Superfície: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mn>4</mn><mo>&#x22C5;</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+        
+            <div>
+                <p><strong>Cilindro</strong></p>
+                <svg>
+                    <ellipse cx="50" cy="20" rx="30" ry="10" stroke="black" stroke-width="2" fill="none" />
+                    <ellipse cx="50" cy="80" rx="30" ry="10" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="20" y1="20" x2="20" y2="80" stroke="black" stroke-width="2" />
+                    <line x1="80" y1="20" x2="80" y2="80" stroke="black" stroke-width="2" />
+                    <line x1="20" y1="80" x2="80" y2="80" stroke="black" stroke-width="2" />
+                    <text x="50" y="15" font-size="12" text-anchor="middle" fill="black">r</text>
+                    <text x="85" y="50" font-size="12" text-anchor="middle" fill="black">h</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#x22C5;</mo><mi>h</mi>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área da Superfície: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mn>2</mn><mi>π</mi><mo>(</mo><mi>r</mi><mo>&#x22C5;</mo><mi>h</mi><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup><mo>)</mo>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+        
+        
+            <div>
+                <p><strong>Cone</strong></p>
+                <svg>
+                    <ellipse cx="50" cy="80" rx="30" ry="10" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="20" y1="80" x2="50" y2="10" stroke="black" stroke-width="2" />
+                    <line x1="80" y1="80" x2="50" y2="10" stroke="black" stroke-width="2" />
+                    <line x1="50" y1="10" x2="50" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <text x="50" y="90" font-size="12" text-anchor="middle" fill="black">r</text>
+                    <text x="30" y="50" font-size="12" text-anchor="middle" fill="black">h</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>π</mi><mo>&#x22C5;</mo><msup><mi>r</mi><mn>2</mn></msup><mo>&#x22C5;</mo><mi>h</mi>
+                                </mrow>
+                                <mn>3</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área da Superfície: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo><mi>r</mi><mo>(</mo><mi>r</mi><mo>+</mo><mi>l</mi><mo>)</mo>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+        
+            <div>
+                <p><strong>Tronco do Cone</strong></p>
+                <svg>
+                    <ellipse cx="50" cy="30" rx="20" ry="7" stroke="black" stroke-width="2" fill="none" />
+                    <ellipse cx="50" cy="80" rx="30" ry="10" stroke="black" stroke-width="2" fill="none" />
+                    <line x1="30" y1="30" x2="70" y2="30" stroke="black" stroke-width="2" />
+                    <line x1="20" y1="80" x2="80" y2="80" stroke="black" stroke-width="2" />
+                    <line x1="30" y1="30" x2="20" y2="80" stroke="black" stroke-width="2" />
+                    <line x1="70" y1="30" x2="80" y2="80" stroke="black" stroke-width="2" />
+                    <line x1="50" y1="30" x2="50" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4" />
+                    <text x="50" y="20" font-size="12" text-anchor="middle" fill="black">r</text>
+                    <text x="50" y="90" font-size="12" text-anchor="middle" fill="black">R</text>
+                    <text x="85" y="55" font-size="12" text-anchor="middle" fill="black">h</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>π</mi><mo>&#x22C5;</mo><mi>h</mi>(<msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mi>R</mi><mo>&#x22C5;</mo><mi>r</mi><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup>)
+                                </mrow>
+                                <mn>3</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área da Superfície: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>π</mi><mo>&#x22C5;</mo>(<msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mi>R</mi><mo>&#x22C5;</mo><mi>r</mi><mo>+</mo><msup><mi>r</mi><mn>2</mn></msup>)
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+        
+            <div>
+                <p><strong>Pirâmide</strong></p>
+                <svg>
+                    <!-- Base (quadrado em perspectiva) -->
+                    <polygon points="20,85 80,85 70,75 30,75" fill="#EEE" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Linhas da base -->
+                    <line x1="20" y1="85" x2="80" y2="85" stroke="black" stroke-width="2"/>
+                    <line x1="80" y1="85" x2="70" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="70" y1="75" x2="30" y2="75" stroke="black" stroke-width="2"/>
+                    <line x1="30" y1="75" x2="20" y2="85" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Arestas até o topo -->
+                    <line x1="20" y1="85" x2="50" y2="10" stroke="black" stroke-width="2"/>
+                    <line x1="80" y1="85" x2="50" y2="10" stroke="black" stroke-width="2"/>
+                    <line x1="70" y1="75" x2="50" y2="10" stroke="black" stroke-width="2"/>
+                    <!-- Aresta oculta em linha pontilhada -->
+                    <line x1="30" y1="75" x2="50" y2="10" stroke="black" stroke-width="1" stroke-dasharray="4"/>
+                    
+                    <!-- Linha de altura (pontilhada) -->
+                    <line x1="50" y1="10" x2="50" y2="80" stroke="black" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <!-- Rótulos -->
+                    <text x="50" y="95" font-size="12" text-anchor="middle" fill="black">r</text>
+                    <text x="30" y="50" font-size="12" text-anchor="middle" fill="black">h</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>B</mi><mo>&#x22C5;</mo><mi>h</mi>
+                                </mrow>
+                                <mn>3</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área da Superfície: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>B</mi><mo>&#x22C5;</mo><mi>h</mi>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+            
+            <div>
+                <p><strong>Tronco da Pirâmide</strong></p>
+                <svg>
+                    <!-- Base maior (quadrado em perspectiva) -->
+                    <polygon points="20,80 80,80 70,70 30,70" fill="#EEE" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Base menor (quadrado em perspectiva) -->
+                    <polygon points="35,30 65,30 60,25 40,25" fill="#F5F5F5" stroke="black" stroke-width="2"/>
+                    
+                    <!-- Arestas verticais -->
+                    <line x1="20" y1="80" x2="35" y2="30" stroke="black" stroke-width="2"/>
+                    <line x1="80" y1="80" x2="65" y2="30" stroke="black" stroke-width="2"/>
+                    <line x1="70" y1="70" x2="60" y2="25" stroke="black" stroke-width="2"/>
+                    <!-- Aresta oculta em linha pontilhada -->
+                    <line x1="30" y1="70" x2="40" y2="25" stroke="black" stroke-width="1" stroke-dasharray="4"/>
+                    
+                    <!-- Linha de altura (pontilhada) -->
+                    <line x1="50" y1="27" x2="50" y2="75" stroke="black" stroke-width="2" stroke-dasharray="4"/>
+                    
+                    <!-- Rótulos -->
+                    <text x="50" y="90" font-size="12" text-anchor="middle" fill="black">B</text>
+                    <text x="50" y="20" font-size="12" text-anchor="middle" fill="black">b</text>
+                    <text x="30" y="55" font-size="12" text-anchor="middle" fill="black">h</text>
+                </svg>
+                <p>Volume: 
+                    <math>
+                        <mrow>
+                            <mi>V</mi><mo>=</mo>
+                            <mfrac>
+                                <mrow>
+                                    <mi>h</mi><mo>(</mo><mi>B</mi><mo>+</mo><mi>b</mi><mo>+</mo><msqrt><mi>B</mi><mo>&#x22C5;</mo><mi>b</mi></msqrt><mo>)</mo>
+                                </mrow>
+                                <mn>3</mn>
+                            </mfrac>
+                        </mrow>
+                    </math>
+                </p>
+                <p>Área da Superfície: 
+                    <math>
+                        <mrow>
+                            <mi>A</mi><mo>=</mo><mi>B</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>a</mi>
+                        </mrow>
+                    </math>
+                </p>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Progressões Aritmética (PA)</h2>
+            <p>
+                <math>
+                    <mrow>
+                        <msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><msub><mi>a</mi><mi>1</mi></msub><mo>+</mo>
+                        <mrow>
+                            <mo>(</mo><mi>n</mi><mo>-</mo><mn>1</mn><mo>)</mo>
+                        </mrow>
+                        <mo>&#x22C5;</mo><mi>r</mi>
+                    </mrow>
+                </math>
+            </p>
+        </section>
+        
+        <!-- Novas Seções -->
+        <section>
+            <h2>Trigonometria</h2>
+            <p><strong>Seno:</strong> 
+                <math>
+                    <mrow>
+                        <mi>sen</mi><mo>(</mo><mi>θ</mi><mo>)</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>oposto</mi>
+                            </mrow>
+                            <mi>hipotenusa</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Cosseno:</strong> 
+                <math>
+                    <mrow>
+                        <mi>cos</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>adjacente</mi>
+                            </mrow>
+                            <mi>hipotenusa</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Tangente:</strong> 
+                <math>
+                    <mrow>
+                        <mi>tan</mi><mo>&#x28;</mo><mi>θ</mi><mo>&#x29;</mo><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mi>oposto</mi>
+                            </mrow>
+                            <mi>adjacente</mi>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+        </section>
+
+        <section class="conteudo">
+            <h2>Álgebra</h2>
+            <p><strong>Equação Quadrática:</strong> 
+                <math>
+                    <mrow>
+                        <mi>ax</mi><msup><mi>2</mi></msup><mo>+</mo><mi>bx</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn>
+                    </mrow>
+                </math>
+            </p>
+            <p><strong>Fórmula de Bhaskara:</strong> 
+                <math>
+                    <mrow>
+                        <mi>x</mi><mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <mo>-</mo><mi>b</mi><mo>±</mo><msqrt>
+                                    <mrow>
+                                        <msup><mi>b</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>a</mi><mi>c</mi>
+                                    </mrow>
+                                </msqrt>
+                            </mrow>
+                            <mrow>
+                                <mn>2</mn><mi>a</mi>
+                            </mrow>
+                        </mfrac>
+                    </mrow>
+                </math>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Hugo de Araújo Bezerra</p>
+    </footer>
+<!-- Referência ao arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
