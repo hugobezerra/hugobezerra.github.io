@@ -17,4 +17,46 @@ function pesquisar() {
             elemento.style.display = "none";
         }
     }
+    // Função para desenhar o triângulo
+function drawTriangle() {
+    const canvas = document.getElementById('triangleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.moveTo(100, 30);  // Ponto superior
+    ctx.lineTo(30, 170);  // Ponto inferior esquerdo
+    ctx.lineTo(170, 170); // Ponto inferior direito
+    ctx.closePath();
+
+    ctx.fillStyle = 'lightblue';
+    ctx.fill();
+}
+
+// Função para desenhar o círculo
+function drawCircle() {
+    const canvas = document.getElementById('circleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.beginPath();
+    ctx.arc(100, 100, 70, 0, Math.PI * 2);  // Desenha o círculo
+    ctx.closePath();
+
+    ctx.fillStyle = 'lightgreen';
+    ctx.fill();
+}
+
+// Função para desenhar o retângulo
+function drawRectangle() {
+    const canvas = document.getElementById('rectangleCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'lightcoral';
+    ctx.fillRect(30, 30, 140, 100); // Desenha o retângulo
+}
+
+// Chama as funções de desenho
+drawTriangle();
+drawCircle();
+drawRectangle();
+
 }
