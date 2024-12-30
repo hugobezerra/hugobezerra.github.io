@@ -132,3 +132,9 @@ h1 {
         width: 90%; /* Quase ocupa a largura total */
     }
 }
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    border-radius: 50%;
+}
