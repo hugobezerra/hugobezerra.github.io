@@ -64,6 +64,9 @@ h2 {
 main.container{
     margin-top: 70px; /* Ajuste este valor conforme a altura da sua barra de navegação */
 }
+section { /* Ou seletores mais específicos, como #funcao-exponencial, etc. */
+    scroll-margin-top: 80px; /* Ajuste este valor conforme necessário */
+}
 .navbar-brand {
     font-weight: bold;
     text-decoration: none;
