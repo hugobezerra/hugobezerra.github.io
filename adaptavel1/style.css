@@ -31,16 +31,39 @@ h2 {
 }
 
 .navbar {
-    background-color: #f0f0f0;
-    padding: 10px 0;
+    position: fixed; /* Torna a barra fixa */
+    top: 0; /* Alinha a barra ao topo da página */
+    left: 0; /* Alinha a barra à esquerda da página */
+    width: 100%; /* Garante que a barra ocupe toda a largura */
+    z-index: 100; /* Garante que a barra fique acima de outros elementos */
+    background-color: #f8f9fa; /* Ou a cor de fundo que você preferir */
+    padding: 10px 0; /* Ajusta o espaçamento interno vertical (diminui o valor para tornar mais fina) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil (opcional) */
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Mantém o display flex para o container */
+    align-items: center; /* Alinha verticalmente os itens no container */
+    justify-content: space-between; /* Espaça os itens horizontalmente */
+    padding: 0 20px; /* Ajusta o espaçamento lateral interno do container */
 }
-
+/* Para tornar o menu responsivo mais suave */
+@media (max-width: 768px) {
+  .navbar-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      display: none; /* Esconde o menu inicialmente em telas menores */
+      flex-direction: column; /* Alinha os itens verticalmente no menu */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+  }
+}
+main.container{
+    padding-top: 60px; /* Ajuste este valor conforme a altura da sua barra de navegação */
+}
 .navbar-brand {
     font-weight: bold;
     text-decoration: none;
