@@ -19,7 +19,7 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
-    scroll-margin-top: 80px; /* Ajuste este valor conforme necessário */
+    scroll-margin-top: 90px; /* Ajuste este valor conforme necessário */
 }
 
 h2 {
@@ -63,7 +63,7 @@ h2 {
   }
 }
 main.container{,
-    padding-top: 80px; /* Ajuste este valor conforme necessário */
+    padding-top: 90px; /* Ajuste este valor conforme necessário */
    /* margin-top: 70px; Ajuste este valor conforme a altura da sua barra de navegação */
 }
 .navbar-brand {
