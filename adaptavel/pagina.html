@@ -11,56 +11,112 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">Fórmulas</a>
-                <button class="navbar-toggler" type="button">
-                    <span class="navbar-toggler-icon">&#9776;</span>
-                </button>
-                <div class="navbar-menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Álgebra</a>
-                            <ul class="submenu">
-                                <li><a href="#prod-notaveis">Produtos Notáveis</a></li>
-                                <li><a href="#funcao-afim">Função Afim</a></li>
-                                <li><a href="#funcao-quadratica">Função Quadrática</a></li>
-                                <li><a href="#funcao-exponencial">Função Exponencial</a></li>
-                                <li><a href="#funcao-logaritmica">Função Logarítmica</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Geometria</a>
-                            <ul class="submenu">
-                                <li><a href="#geometria-plana">Geometria Plana</a></li>
-                                <li><a href="#geometria-espacial">Geometria Espacial</a></li>
-                                <li><a href="#geometria-analitica">Geometria Analítica</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Outros</a>
-                            <ul class="submenu">
-                                <li><a href="#trigonometria">Trigonometria</a></li>
-                                <li><a href="#analise-combinatoria">Análise Combinatória</a></li>
-                                <li><a href="#probabilidade">Probabilidade</a></li>
-                                <li><a href="#matrizes-determinantes">Matrizes e Determinantes</a></li>
-                                <li><a href="#sistemas-lineares">Sistemas Lineares</a></li>
-                                <li><a href="#numeros-complexos">Números Complexos</a></li>
-                                <li><a href="#limite">Limite</a></li>
-                                <li><a href="#derivada">Derivada</a></li>
-                                <li><a href="#integral">Integral</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="search-box">
-                    <input type="text" placeholder="Pesquisar...">
-                </div>
-            </div>
-        </nav>
+            </nav>
     </header>
 
     <main class="container">
-        </main>
+        <section id="prod-notaveis">
+            <h2>Produtos Notáveis</h2>
+            <p>Quadrado da soma: \[(a + b)^2 = a^2 + 2ab + b^2\]</p>
+            <p>Quadrado da diferença: \[(a - b)^2 = a^2 - 2ab + b^2\]</p>
+            <p>Produto da soma pela diferença: \[(a + b)(a - b) = a^2 - b^2\]</p>
+            <p>Cubo da soma: \[(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\]</p>
+            <p>Cubo da diferença: \[(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3\]</p>
+        </section>
+
+        <section id="funcao-afim">
+            <h2>Função Afim</h2>
+            <p>Forma geral: \[f(x) = ax + b\]</p>
+        </section>
+
+        <section id="funcao-quadratica">
+            <h2>Função Quadrática</h2>
+            <p>Forma geral: \[f(x) = ax^2 + bx + c\]</p>
+            <p>Delta: \[\Delta = b^2 - 4ac\]</p>
+            <p>Fórmula de Bhaskara: \[x = \frac{-b \pm \sqrt{\Delta}}{2a}\]</p>
+        </section>
+
+        <section id="funcao-exponencial">
+            <h2>Função Exponencial</h2>
+            <p>Forma geral: \[f(x) = a^x, \text{com } a > 0 \text{ e } a \ne 1\]</p>
+        </section>
+
+        <section id="funcao-logaritmica">
+            <h2>Função Logarítmica</h2>
+            <p>Definição: \[y = \log_a{x} \Leftrightarrow a^y = x, \text{com } a > 0, a \ne 1 \text{ e } x > 0\]</p>
+        </section>
+
+        <section id="geometria-plana">
+            <h2>Geometria Plana</h2>
+            <p>Área do triângulo: \[A = \frac{b \cdot h}{2}\]</p>
+            <p>Área do círculo: \[A = \pi r^2\]</p>
+            <p>Teorema de Pitágoras: \[a^2 = b^2 + c^2\]</p>
+        </section>
+
+        <section id="geometria-espacial">
+            <h2>Geometria Espacial</h2>
+            <p>Volume do cubo: \[V = a^3\]</p>
+            <p>Volume da esfera: \[V = \frac{4}{3} \pi r^3\]</p>
+        </section>
+
+        <section id="geometria-analitica">
+            <h2>Geometria Analítica</h2>
+            <p>Distância entre dois pontos: \[d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\]</p>
+        </section>
+
+        <section id="trigonometria">
+            <h2>Trigonometria</h2>
+            <p>Relação fundamental: \[\sin^2{\theta} + \cos^2{\theta} = 1\]</p>
+            <p>Seno: \[\sin \theta = \frac{\text{Cateto Oposto}}{\text{Hipotenusa}}\]</p>
+            <p>Cosseno: \[\cos \theta = \frac{\text{Cateto Adjacente}}{\text{Hipotenusa}}\]</p>
+            <p>Tangente: \[\tan \theta = \frac{\text{Cateto Oposto}}{\text{Cateto Adjacente}}\]</p>
+        </section>
+
+        <section id="analise-combinatoria">
+            <h2>Análise Combinatória</h2>
+            <p>Permutação simples: \[P_n = n!\]</p>
+            <p>Arranjo simples: \[A_{n,k} = \frac{n!}{(n-k)!}\]</p>
+            <p>Combinação simples: \[C_{n,k} = \frac{n!}{k!(n-k)!}\]</p>
+        </section>
+
+        <section id="probabilidade">
+            <h2>Probabilidade</h2>
+            <p>Probabilidade de um evento A: \[P(A) = \frac{n(A)}{n(\Omega)}\]</p>
+        </section>
+
+        <section id="matrizes-determinantes">
+            <h2>Matrizes e Determinantes</h2>
+            <p>Matriz 2x2: \[\begin{bmatrix} a & b \\ c & d \end{bmatrix}\]</p>
+            <p>Determinante de uma matriz 2x2: \[\begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc\]</p>
+        </section>
+
+        <section id="sistemas-lineares">
+            <h2>Sistemas Lineares</h2>
+            <p>Sistema 2x2: \[\begin{cases} ax + by = c \\ dx + ey = f \end{cases}\]</p>
+        </section>
+
+        <section id="numeros-complexos">
+            <h2>Números Complexos</h2>
+            <p>Forma algébrica: \[z = a + bi\]</p>
+        </section>
+
+        <section id="limite">
+            <h2>Limite</h2>
+            <p>Definição de limite: \[\lim_{x \to c} f(x) = L\]</p>
+        </section>
+
+        <section id="derivada">
+            <h2>Derivada</h2>
+            <p>Definição de derivada: \[f'(x) = \frac{df}{dx}\]</p>
+            <p>Regra da potência: \[\frac{d}{dx} x^n = nx^{n-1}\]</p>
+        </section>
+
+        <section id="integral">
+            <h2>Integral</h2>
+            <p>Integral indefinida: \[\int f(x) dx\]</p>
+            <p>Regra da potência para integral: \[\int x^n dx = \frac{x^{n+1}}{n+1} + C\]</p>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
