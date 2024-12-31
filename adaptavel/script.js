@@ -1,8 +1,8 @@
 const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarMenu = document.querySelector('.navbar-menu');
 const navLinks = document.querySelectorAll('.nav-link');
-const searchInput = document.getElementById('searchInput'); // Obtém o campo de pesquisa
-const mainContent = document.getElementById('mainContent'); // Obtém o conteúdo principal
+const searchInput = document.getElementById('searchInput');
+const mainContent = document.getElementById('mainContent');
 
 navbarToggler.addEventListener('click', () => {
     navbarMenu.style.display = navbarMenu.style.display === 'flex' ? 'none' : 'flex';
@@ -21,21 +21,20 @@ navLinks.forEach(link => {
 });
 
 searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.toLowerCase(); // Converte o termo de pesquisa para minúsculas
-    const sections = mainContent.querySelectorAll('section'); // Seleciona todas as seções
+    const searchTerm = searchInput.value.toLowerCase();
+    const sections = mainContent.querySelectorAll('section');
 
     sections.forEach(section => {
-        const sectionText = section.textContent.toLowerCase(); // Converte o texto da seção para minúsculas
+        const sectionText = section.textContent.toLowerCase();
 
-        if (sectionText.includes(searchTerm)) { // Verifica se o termo de pesquisa está presente no texto da seção
-            section.style.display = 'block'; // Mostra a seção se houver correspondência
+        if (sectionText.includes(searchTerm)) {
+            section.style.display = 'block';
 
-            // Realça o texto encontrado
             const regex = new RegExp(searchTerm, 'gi');
             section.innerHTML = section.innerHTML.replace(regex, '<span class="highlight">$&</span>');
 
         } else {
-            section.style.display = 'none'; // Oculta a seção se não houver correspondência
+            section.style.display = 'none';
         }
 
         if (searchTerm === ""){
