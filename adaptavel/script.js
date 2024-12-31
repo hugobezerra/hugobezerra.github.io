@@ -3,6 +3,7 @@ const navbarMenu = document.querySelector('.navbar-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const searchInput = document.getElementById('searchInput');
 const mainContent = document.getElementById('mainContent');
+let timeoutId; // Variável para armazenar o ID do timeout
 
 navbarToggler.addEventListener('click', () => {
     navbarMenu.style.display = navbarMenu.style.display === 'flex' ? 'none' : 'flex';
@@ -21,31 +22,53 @@ navLinks.forEach(link => {
 });
 
 searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.toLowerCase();
+    clearTimeout(timeoutId); // Limpa o timeout anterior
 
-    if (searchTerm.trim() !== "") {
+    timeoutId = setTimeout(() => { // Define um novo timeout
+        const searchTerm = searchInput.value.toLowerCase();
 
-        const sections = mainContent.querySelectorAll('section');
-        let foundSection = null;
+        if (searchTerm.trim() !== "") {
+            const sections = mainContent.querySelectorAll('section');
+            let foundSection = null;
 
-        sections.forEach(section => {
-            const sectionText = section.textContent.toLowerCase();
-            if (sectionText.includes(searchTerm)) {
-                foundSection = section;
-                return;
+            sections.forEach(section => {
+                const sectionText = section.textContent.toLowerCase();
+                if (sectionText.includes(searchTerm)) {
+                    foundSection = section;
+                    return;
+                }
+            });
+
+            if (foundSection) {
+                foundSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                //searchInput.value = ""; // Removemos essa linha daqui
             }
-        });
-
-        if (foundSection) {
-            foundSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            searchInput.value = "";
         }
-    }
+    }, 300); // Executa a pesquisa 300ms após o usuário parar de digitar
 });
 
 searchInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault();
-        searchInput.dispatchEvent(new Event('input'));
+        clearTimeout(timeoutId); // Limpa o timeout se o Enter for pressionado
+        const searchTerm = searchInput.value.toLowerCase();
+
+        if (searchTerm.trim() !== "") {
+            const sections = mainContent.querySelectorAll('section');
+            let foundSection = null;
+
+            sections.forEach(section => {
+                const sectionText = section.textContent.toLowerCase();
+                if (sectionText.includes(searchTerm)) {
+                    foundSection = section;
+                    return;
+                }
+            });
+
+            if (foundSection) {
+                foundSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                searchInput.value = ""; // Limpa o campo de pesquisa após a rolagem (agora aqui)
+            }
+        }
     }
 });
