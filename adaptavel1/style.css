@@ -62,7 +62,7 @@ h2 {
   }
 }
 main.container{
-    padding-top: 60px; /* Ajuste este valor conforme a altura da sua barra de navegação */
+    padding-top: 70px; /* Ajuste este valor conforme a altura da sua barra de navegação */
 }
 .navbar-brand {
     font-weight: bold;
