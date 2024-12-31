@@ -29,16 +29,15 @@ searchInput.addEventListener('input', () => {
 
         if (sectionText.includes(searchTerm)) {
             section.style.display = 'block';
-
-            const regex = new RegExp(searchTerm, 'gi');
-            section.innerHTML = section.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+            section.classList.add('highlight'); // Adiciona a classe 'highlight' à SEÇÃO
 
         } else {
             section.style.display = 'none';
+            section.classList.remove('highlight'); // Remove a classe 'highlight'
         }
 
         if (searchTerm === ""){
-          section.innerHTML = section.innerHTML.replace(/<span class="highlight">(.*?)<\/span>/gi, '$1');
+          section.classList.remove('highlight');
         }
     });
 });
