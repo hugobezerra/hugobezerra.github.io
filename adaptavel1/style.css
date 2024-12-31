@@ -6,6 +6,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 60px;
 }
 .highlight {
     background-color: yellow; /* Cor de fundo amarela para a SEÇÃO */
@@ -18,7 +19,7 @@ section {
     border: 1px solid #ddd;
     border-radius: 5px;
     background-color: #f9f9f9;
-    scroll-margin-top: 80px;
+    scroll-margin-top: 60px;
 }
 h2 {
     margin-top: 0;
@@ -57,10 +58,6 @@ h2 {
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       padding: 10px;
   }
-}
-main.container{,
-    /*padding-top: 90px; Ajuste */
-    margin-top:80px;
 }
 .navbar-brand {
     font-weight: bold;
