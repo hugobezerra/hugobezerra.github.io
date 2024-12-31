@@ -23,7 +23,7 @@ navLinks.forEach(link => {
 searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
 
-    if (searchTerm.trim() !== "") { // Verifica se o campo de pesquisa não está vazio ou contém apenas espaços em branco
+    if (searchTerm.trim() !== "") {
 
         const sections = mainContent.querySelectorAll('section');
         let foundSection = null;
@@ -32,20 +32,20 @@ searchInput.addEventListener('input', () => {
             const sectionText = section.textContent.toLowerCase();
             if (sectionText.includes(searchTerm)) {
                 foundSection = section;
-                return; // Sai do loop assim que encontrar a primeira correspondência
+                return;
             }
         });
 
         if (foundSection) {
             foundSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            searchInput.value = ""; // Limpa o campo de pesquisa após a rolagem
+            searchInput.value = "";
         }
     }
 });
 
 searchInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        event.preventDefault(); // Impede o envio do formulário (se estiver dentro de um)
-        searchInput.dispatchEvent(new Event('input')); // Dispara o evento 'input' manualmente
+        event.preventDefault();
+        searchInput.dispatchEvent(new Event('input'));
     }
 });
