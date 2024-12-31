@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmulas Matemáticas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Fórmulas</a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon">&#9776;</span>
+                </button>
+                <div class="navbar-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Álgebra</a>
+                            <ul class="submenu">
+                                <li><a href="#prod-notaveis">Produtos Notáveis</a></li>
+                                <li><a href="#funcao-afim">Função Afim</a></li>
+                                <li><a href="#funcao-quadratica">Função Quadrática</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Geometria</a>
+                            <ul class="submenu">
+                                <li><a href="#geometria-plana">Geometria Plana</a></li>
+                                <li><a href="#geometria-espacial">Geometria Espacial</a></li>
+                                </ul>
+                        </li>
+                        </ul>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar...">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="prod-notaveis">
+            <h2>Produtos Notáveis</h2>
+            <p>\[(a + b)^2 = a^2 + 2ab + b^2\]</p>
+            <p>Exemplo: \[(x + 3)^2 = x^2 + 6x + 9\]</p>
+        </section>
+
+        <section id="funcao-afim">
+            <h2>Função Afim</h2>
+            <p>\[f(x) = ax + b\]</p>
+        </section>
+
+        <section id="funcao-quadratica">
+          <h2>Função Quadrática</h2>
+          <p>\[f(x) = ax^2 + bx + c\]</p>
+      </section>
+
+        <section id="geometria-plana">
+            <h2>Geometria Plana</h2>
+            <p>Área do Triângulo: \[A = \frac{b \cdot h}{2}\]</p>
+        </section>
+
+        <section id="geometria-espacial">
+            <h2>Geometria Espacial</h2>
+            <p>Volume do Cubo: \[V = a^3\]</p>
+        </section>
+        </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
