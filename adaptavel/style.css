@@ -9,7 +9,9 @@ body {
     padding: 20px;
 }
 .highlight {
-    background-color: yellow;
+    background-color: yellow; /* Cor de fundo amarela para a SEÇÃO */
+    padding: 20px;
+    border-radius: 5px;
 }
 section {
     margin-bottom: 30px;
