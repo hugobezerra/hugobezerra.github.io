@@ -22,22 +22,30 @@ navLinks.forEach(link => {
 
 searchInput.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
-    const sections = mainContent.querySelectorAll('section');
 
-    sections.forEach(section => {
-        const sectionText = section.textContent.toLowerCase();
+    if (searchTerm.trim() !== "") { // Verifica se o campo de pesquisa não está vazio ou contém apenas espaços em branco
 
-        if (sectionText.includes(searchTerm)) {
-            section.style.display = 'block';
-            section.classList.add('highlight'); // Adiciona a classe 'highlight' à SEÇÃO
+        const sections = mainContent.querySelectorAll('section');
+        let foundSection = null;
 
-        } else {
-            section.style.display = 'none';
-            section.classList.remove('highlight'); // Remove a classe 'highlight'
+        sections.forEach(section => {
+            const sectionText = section.textContent.toLowerCase();
+            if (sectionText.includes(searchTerm)) {
+                foundSection = section;
+                return; // Sai do loop assim que encontrar a primeira correspondência
+            }
+        });
+
+        if (foundSection) {
+            foundSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            searchInput.value = ""; // Limpa o campo de pesquisa após a rolagem
         }
+    }
+});
 
-        if (searchTerm === ""){
-          section.classList.remove('highlight');
-        }
-    });
+searchInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Impede o envio do formulário (se estiver dentro de um)
+        searchInput.dispatchEvent(new Event('input')); // Dispara o evento 'input' manualmente
+    }
 });
